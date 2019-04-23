@@ -1,10 +1,57 @@
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+}
+
+h1, h2, h3, p {
+	margin: 0px 20px;
+}
+
+h1:first-of-type {
+	margin-top: 20px;
+}
+
+.logo {
+	margin-top: 45px;
+	margin-left: 25px;
+	width: 10vw;
+}
+
 nav {
-	width: 100vw;
-	background-color: white;
-	box-shadow: #bbb 3px 3px 10px;
+	/*width: 100%;*/
+	box-shadow: white 1px 10px 50px;
+	background: linear-gradient(to right, #808080, #696969);
+	padding: 10px;
 	position: sticky;
 	top: 0px;
+	justify-items: center;
+
 }
+
+nav a {
+	display: inline-block;
+	color: white;
+	padding: 10px 25px;
+}
+
+nav a:hover {
+	color: white;
+	text-decoration: none;
+	background-color: darkgrey;
+}
+
+
+
 .image-wrapper {
 	background-color: magenta;
 	width: 100%;
