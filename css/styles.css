@@ -14,7 +14,6 @@ body {
 }
 
 h1, h2, h3, p {
-	margin: 0px 20px;
 }
 
 h1:first-of-type {
@@ -44,6 +43,11 @@ nav a {
 	padding: 10px 25px;
 }
 
+nav img {    /* navbar logo */
+	width: 40px;
+	margin: 10px 20px 7px 10px;
+}
+
 nav a:hover {
 	color: white;
 	text-decoration: none;
@@ -52,11 +56,7 @@ nav a:hover {
 
 
 
-.image-wrapper {
-	background-color: magenta;
-	width: 100%;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+figure {   /* for history page images */
 }
 
 .history img {
