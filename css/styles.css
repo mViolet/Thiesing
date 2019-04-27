@@ -41,7 +41,6 @@ nav a {
 	display: inline-block;
 	color: white;
 	padding: 10px 25px;
-	z-index: 0;
 }
 
 nav img {    /* navbar logo */
