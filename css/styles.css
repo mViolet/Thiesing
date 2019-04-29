@@ -27,32 +27,18 @@ h1:first-of-type {
 }
 
 nav {
-	/*width: 100%;*/
-	box-shadow: white 1px 10px 50px;
-	background: linear-gradient(to right, #808080, #696969);
-	padding: 10px;
-	position: sticky;
-	top: 0px;
-	justify-items: center;
-
+	background: linear-gradient(63deg, rgb(98, 98, 98), rgb(39, 39, 39));
 }
 
-nav a {
-	display: inline-block;
-	color: white;
-	padding: 10px 25px;
+.logo-image {
+	width: 30px;
 }
 
-nav img {    /* navbar logo */
-	width: 40px;
-	margin: 10px 20px 7px 10px;
-}
-
-nav a:hover {
+/*nav a:hover {
 	color: white;
 	text-decoration: none;
-	background-color: darkgrey;
-}
+	background-color: lightblue;
+}*/
 
 
 
