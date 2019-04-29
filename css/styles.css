@@ -30,12 +30,6 @@ nav {
 	background: linear-gradient(63deg, rgb(98, 98, 98), rgb(39, 39, 39));
 }
 
-nav a {
-	display: inline-block;
-	color: white;
-	padding: 10px 25px;
-}
-
 .logo-image {
 	width: 30px;
 }
