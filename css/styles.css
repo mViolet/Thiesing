@@ -28,8 +28,7 @@ body {
 	margin: 0;
 }
 
-body {
-}
+/*-------------------------------------*/
 
 h1, h2, h3, p {
 }
@@ -43,20 +42,6 @@ h1:first-of-type {
 	margin-left: 25px;
 	width: 10vw;
 }
-
-nav {
-	background: linear-gradient(63deg, rgb(98, 98, 98), rgb(39, 39, 39));
-}
-
-.logo-image {
-	width: 30px;
-}
-
-/*nav a:hover {
-	color: white;
-	text-decoration: none;
-	background-color: lightblue;
-}*/
 
 
 
