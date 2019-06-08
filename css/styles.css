@@ -25,10 +25,10 @@ body {
 }
 
 
-.carousel-thing h5 {
+.carousel-mods h5 {
 	font-size: 6vw;
 }
-.carousel-thing {
+.carousel-mods p{
 	font-size: 3vw;
 }
 
@@ -48,6 +48,24 @@ figure {
 }
 
 /*-------------------------------------*/
+
+/* carousel-fix from Coboer */
+
+#carousel .carousel-caption {
+    color: white;
+    right: 0, auto;
+    text-align: center;
+    max-width: 85%;
+    left: 0, auto;
+    /top: auto;/
+  /position: relative;/
+  top: 50%;
+  transform: translateY(-120%);
+  bottom: initial;
+}
+
+/* carousel-fix end */
+
 
 h1, h2, h3, p {
 }
