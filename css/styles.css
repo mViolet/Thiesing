@@ -66,18 +66,45 @@ figure {
 
 /* carousel-fix end */
 
+/* responsive map fix */
+
+  .map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  }
+  .map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  }/* responsive map fix end */
 
 h1, h2, h3, p {
 }
 
 h1:first-of-type {
 	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .logo {
 	margin-top: 45px;
 	margin-left: 25px;
 	width: 10vw;
+}
+
+.contact{
+  margin-top: 30px;
+  margin-bottom: 100px;
+  padding: 20px;
+  color: white;
+}
+
+.info {
+  padding-bottom: 30px;
 }
 
 .layer {
