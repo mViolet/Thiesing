@@ -84,6 +84,9 @@ figure {
 
 h1, h2, h3, p {
 }
+.history-p {
+  margin-bottom: 100px;
+}
 
 h1:first-of-type {
 	margin-top: 20px;
