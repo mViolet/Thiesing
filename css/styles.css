@@ -12,6 +12,7 @@ body {
 .faq {
 	margin-top: 25px;
 }
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -20,42 +21,121 @@ body {
   line-height: 60px; /* Vertically center the text there */
   background-color: #f5f5f5;
 }
+
 .descriptions, .careers, .maps, .faq, .gallery, .history-quote{
 	margin-bottom: 100px;
 }
 
-/* gallery page styles
+/* gallery text transition styles
 -------------------------------------------------- */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  grid-gap: 20px;
-  padding: 20px;
+.image-container {
+  position: relative;
+  width: 50%;
 }
 
-.gallery img {
+.trans-image {
+  opacity: 1;
+  display: block;
   width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
 }
 
-.gallery .card {
-  border: none;
+.text-container {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.image-container:hover .trans-image {
+  opacity: 0.3;
+}
+
+.image-container:hover .text-container {
+  opacity: 1;
+}
+
+.middle-text {
+  /*background-color: #4CAF50;*/
+  color: black;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+/* gallery styles
+-------------------------------------------------- */
+.gallery img {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.gallery {
+  margin-bottom: 15px;
+}
+
+.gallery-p {
+  padding: 15px;
+}
+
+.video {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+  margin-bottom: 100px;
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding-bottom: 50px;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
 }
 
 /*--------Gallery modal body styles-------*/
-.modal-content {
-  background: #ddd;
+div.modal-content {
+  text-align: left;
+  border: 0;
 }
 
- .modal-header {
-  min-height: 16.42857143px;
-  padding: 15px;
-  border-bottom: 1px solid #e5e5e5;
-  }
+div.modal-header {
+  border: 0;
+  padding-bottom: 0;
+}
 
-.modal-footer {
-  padding: 15px;
-  text-align: right;
-  border-top: 1px solid #e5e5e5;
+div.modal .close {
+  outline: none;
+}
+
+div.modal-footer {
+  border: 0;
+  padding-top: 0;
+}
+
+div.modal-body p {
+  /*color: grey;*/
+  font-style: italic;
+  /*font-size: 90%;*/
+}
+
+div.modal-body img {
+  padding-top: 0;
+  margin-top: 0;
+  width: 100%;
+  height: auto;
 }
 
 /*------------------------------------------*/
@@ -152,10 +232,6 @@ h1:first-of-type {
     left: 0;
     width: 100%;
     height: 100%;
-}
-
-figure {   /* for history page images */
-
 }
 
 .history img {
