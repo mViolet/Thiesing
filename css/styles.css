@@ -5,6 +5,7 @@
 html {
   position: relative;
   min-height: 100%;
+  scroll-behavior: smooth;
 }
 body {
   margin-bottom: 60px; /* Margin bottom by footer height */
@@ -14,16 +15,26 @@ body {
 }
 
 .footer {
-  position: absolute;
+  position: relative;
+  z-index: 1;
   bottom: 0;
-  width: 100%;
+  min-width: 100vw;
   height: 60px; /* Set the fixed height of the footer here */
   line-height: 60px; /* Vertically center the text there */
   background-color: #f5f5f5;
+
 }
 
 .descriptions, .careers, .maps, .faq, .gallery, .history-quote{
 	margin-bottom: 100px;
+}
+
+/* history page styles
+-------------------------------------------------- */
+.banner {
+  position: relative;
+  width: 100vw;
+  margin-bottom: 20px;
 }
 
 /* gallery text transition styles
