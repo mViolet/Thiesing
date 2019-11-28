@@ -117,36 +117,105 @@ div.gallery img {
 }
 
 /*--------Gallery modal body styles-------*/
-div.modal-content {
-  text-align: left;
-  border: 0;
-}
-
-div.modal-header {
-  border: 0;
-  padding-bottom: 0;
-}
-
-div.modal .close {
-  outline: none;
-}
-
-div.modal-footer {
-  border: 0;
-  padding-top: 0;
-}
-
-div.modal-body p {
-  /*color: grey;*/
-  font-style: italic;
-  /*font-size: 90%;*/
-}
-
-div.modal-body img {
-  padding-top: 0;
-  margin-top: 0;
+div.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding: 5px 0;
+  left: 0;
+  top: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
+  margin-top: 0px;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+
+div.modal-content {
+  position: relative;
+  margin: auto;
+  background-color: transparent;
+  margin: auto;
+  padding: 0;
+  width: 85%;
+  max-width: 1200px;
+  border: none;
+}
+
+div.my-slides {
+  text-align: center;
+}
+
+.portrait-image {
+  max-height: 60vh;
+}
+
+.landscape-image {
+  max-width: 76vw;
+}
+
+.close {
+  color: #000 !important;
+  position: absolute;
+  top: 105px;
+  right: 35px;
+  font-size: 20px !important;
+  transition: 0.3s ease;
+  text-decoration: none !important;
+  border: 0 !important;
+  opacity: 1 !important;
+  line-height: 0px !important;
+  text-shadow: none !important;
+  font-weight: bold !important;
+}
+
+.close:hover, .close:focus{
+  color: #000 !important;
+  text-decoration: none !important;
+  cursor: pointer;
+  border: 0 !important;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 20px;
+  margin-top: -50px;
+  color: #fff !important;
+  font-size: 3em;
+  font-weight: bold;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  color: #777 !important;
+  transition: 0.8s ease;
+}
+
+.numberText {
+  position: fixed;
+  margin-right: 10px auto;
+  width: 95vw;
+  bottom: 20px;
+  left: 15px;
+  color: #fff;
+  font-size: 18px;
+  transition: 0.8s ease;
+  margin: 0 auto;
+  /*background-color: rgba(255,255,255,0.5);*/
+  z-index: 1 !important;
+  text-align: center;
+  padding: 20px;
 }
 
 /*------------------------------------------*/
