@@ -35,341 +35,130 @@
 		<h1 class="display-4 font-italic text-center">Gallery of Veneer Processing</h1>
 	</div> <!-- Gallery of Veneer Processing -->
 
-<div class="container">
-
-	<p class="gallery-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br>
-	Feel free to explore the photos and video below to learn more about our operations.</p>
-	<!--Gallery Start-->
 
 <div class="container gallery">
 	<div class="row"> <!--row 1-->
 
-		<div class="col-6 col-md-3 image-container"> <!--AAAAA image container here-->
-			<a href="#imageModal-01" data-toggle="modal">
+		<div class="col-6 col-md-3 image-container" onclick="openModal(); currentSlide(1)"> <!--AAAAA image container here-->
 				<img class="img-fluid trans-image" alt="" src="../images/gallery/gallery-image-01_thumb.jpg"> <!--AAAAA transition image container-->
 				<div class="text-container">
 					<div class="middle-text">Step one: preparing logs</div> <!-- AAAAA class for the text-->
 				</div>
-			</a>
 		</div>
 		
-		<div class="col-6 col-md-3 image-container">
-			<a href="#imageModal-02" data-toggle="modal">
+		<div class="col-6 col-md-3 image-container" onclick="openModal(); currentSlide(2)">
 				<img class="img-fluid trans-image" alt="" src="../images/gallery/gallery-image-02_thumb.jpg">
 				<div class="text-container">
 					<div class="middle-text">Step two: <br>sawing logs</div> <!-- AAAAA class for the text-->
 				</div>
-			</a>
 		</div>
 
-		<div class="col-6 col-md-3 image-container">
-			<a href="#imageModal-03" data-toggle="modal">
-				<img class="img-fluid trans-image" alt="" src="../images/gallery/gallery-image-03_thumb.jpg">
+		<div class="col-6 col-md-3 image-container" alt="" onclick="openModal(); currentSlide(3)">
+				<img class="img-fluid trans-image" src="../images/gallery/gallery-image-03_thumb.jpg">
 				<div class="text-container">
 					<div class="middle-text">Step three: Curing logs</div> <!-- AAAAA class for the text-->
 				</div>
-			</a>
 		</div>
 
-		<div class="col-6 col-md-3 image-container">
-			<a href="#imageModal-04" data-toggle="modal">
+		<div class="col-6 col-md-3 image-container" onclick="openModal(); currentSlide(4)">
 				<img class="img-fluid trans-image" alt="" src="../images/gallery/gallery-image-04_thumb.jpg">
 				<div class="text-container">
 					<div class="middle-text">Step four: transporting</div> <!-- AAAAA class for the text-->
 				</div>
-			</a>
 		</div>
 </div> <!-- row end-->
 
 
 <div class="row">
-			<div class="col-6 col-md-3 image-container">
-				<a href="#imageModal-05" data-toggle="modal">
+			<div class="col-6 col-md-3 image-container" onclick="openModal(); currentSlide(5)">
 					<img class="img-fluid trans-image" alt="" src="../images/gallery/gallery-image-05_thumb.jpg">
 					<div class="text-container">
 						<div class="middle-text">process: teaser text</div> <!-- AAAAA class for the text-->
 					</div>
-				</a>
 			</div>
 
-			<div class="col-6 col-md-3 image-container">
-				<a href="#imageModal-06" data-toggle="modal">
+			<div class="col-6 col-md-3 image-container" onclick="openModal(); currentSlide(6)">
 					<img class="img-fluid trans-image" alt="" src="../images/gallery/gallery-image-06_thumb.jpg">
 					<div class="text-container">
 						<div class="middle-text">process: teaser text</div> <!-- AAAAA class for the text-->
 					</div>
-				</a>
 			</div>
 
-			<div class="col-6 col-md-3 image-container">
-				<a href="#imageModal-07" data-toggle="modal">
+			<div class="col-6 col-md-3 image-container" onclick="openModal(); currentSlide(7)">
 					<img class="img-fluid trans-image" alt="" src="../images/gallery/gallery-image-07_thumb.jpg">
 					<div class="text-container">
 						<div class="middle-text">process: teaser text</div> <!-- AAAAA class for the text-->
 					</div>
-				</a>
 			</div>
 
-			<div class="col-6 col-md-3 image-container">
+			<div class="col-6 col-md-3 image-container" onclick="openModal(); currentSlide(8)">
 				<a href="#imageModal-08" data-toggle="modal">
 					<img class="img-fluid trans-image" alt="" src="../images/gallery/gallery-image-08_thumb.jpg">
 					<div class="text-container">
 						<div class="middle-text">process: teaser text</div> <!-- AAAAA class for the text-->
 					</div>
-				</a>
 			</div>
-
 </div>
-
-
-<!-- last ro... add later?-->
-<!-- <div class="row">
-			<div class="col-6 col-md-3">
-				<a href="#imageModal-09" data-toggle="modal">
-					<img class="img-fluid" alt="" src="../images/gallery/gallery-image-07_thumb.jpg">
-				</a>
-			</div>
-
-			<div class="col-6 col-md-3">
-				<a href="#imageModal-10" data-toggle="modal">
-					<img class="img-fluid" alt="" src="../images/gallery/gallery-image-08_thumb.jpg">
-				</a>
-			</div>
-
-			<div class="col-6 col-md-3">
-				<a href="#imageModal-11" data-toggle="modal">
-					<img class="img-fluid" alt="" src="../images/gallery/gallery-image-dryer-02_thumb.jpg">
-				</a>
-			</div>
-
-			<div class="col-6 col-md-3">
-				<a href="#imageModal-12" data-toggle="modal">
-					<img class="img-fluid" alt="" src="../images/gallery/gallery-image-dryer_thumb.jpg">
-				</a>
-			</div>
-</div> -->
-
 </div><!--end container-->
 
 
-<!--Modals-->
+
+
+<!--Modal-->
 <!---------->
-
-<!-- #1 -->
-<div class="modal fade" id="imageModal-01" tabindex="-1" role="dialog" aria-labelledby="imageModal-01CenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
+<div id="my-modal" class="modal">
+  <!-- close button -->
+  <span class="close" onclick="closeModal()">&#10006;</span>
+  <!-- slides -->
     <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <img class="img-fluid" src="../images/gallery/gallery-image-01.jpeg">
-        <p>Here is some text explaining the image and what is taking place</p>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- end #1 -->
 
-<!-- #2 -->
-<div class="modal fade" id="imageModal-02" tabindex="-1" role="dialog" aria-labelledby="imageModal-01CenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+      <div class="my-slides"> <!-- individual slide -->
+        <div class="numberText">1 / 8: Here is some text that is describing what is happening in the image. Here is some text that is describing what is happening in the image.</div>
+        <img class="landscape-image img-fluid" src="../images/gallery/gallery-image-01.jpeg">
       </div>
-      <div class="modal-body">
-        <img class="img-fluid" src="../images/gallery/gallery-image-02.jpeg">
-        <p>Here is some text explaining the image and what is taking place</p>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- end #2 -->
 
-<!-- #3 -->
-<div class="modal fade" id="imageModal-03" tabindex="-1" role="dialog" aria-labelledby="imageModal-01CenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+      <div class="my-slides"> <!-- individual slide -->
+        <div class="numberText">2 / 8: Here is some text that is describing what is happening in the image. Here is some text that is describing what is happening in the image.</div>
+        <img class="portrait-image img-fluid" src="../images/gallery/gallery-image-02.jpeg">
       </div>
-      <div class="modal-body">
-        <img class="img-fluid" src="../images/gallery/gallery-image-03.jpeg">
-        <p>Here is some text explaining the image and what is taking place</p>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- end #3 -->
 
-<!-- #4 -->
-<div class="modal fade" id="imageModal-04" tabindex="-1" role="dialog" aria-labelledby="imageModal-01CenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+      <div class="my-slides"> <!-- individual slide -->
+        <div class="numberText">3 / 8: Here is some text that is describing what is happening in the image. Here is some text that is describing what is happening in the image.</div>
+        <img class="portrait-image img-fluid" src="../images/gallery/gallery-image-03.jpeg">
       </div>
-      <div class="modal-body">
-        <img class="img-fluid" src="../images/gallery/gallery-image-04.jpeg">
-        <p>Here is some text explaining the image and what is taking place</p>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- end #4 -->
 
-<!-- #5 -->
-<div class="modal fade" id="imageModal-05" tabindex="-1" role="dialog" aria-labelledby="imageModal-01CenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+      <div class="my-slides"> <!-- individual slide -->
+        <div class="numberText">4 / 8: Here is some text that is describing what is happening in the image. Here is some text that is describing what is happening in the image.</div>
+        <img class="landscape-image img-fluid" src="../images/gallery/gallery-image-04.jpeg">
       </div>
-      <div class="modal-body">
-        <img class="img-fluid" src="../images/gallery/gallery-image-05.jpeg">
-        <p>Here is some text explaining the image and what is taking place</p>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- end #5 -->
 
-<!-- #6 -->
-<div class="modal fade" id="imageModal-06" tabindex="-1" role="dialog" aria-labelledby="imageModal-01CenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+      <div class="my-slides"> <!-- individual slide -->
+        <div class="numberText">5 / 8: Here is some text that is describing what is happening in the image. Here is some text that is describing what is happening in the image.</div>
+        <img class="landscape-image img-fluid" src="../images/gallery/gallery-image-05.jpeg">
       </div>
-      <div class="modal-body">
-        <img class="img-fluid" src="../images/gallery/gallery-image-06.jpeg">
-        <p>Here is some text explaining the image and what is taking place</p>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- end #6 -->
 
-<!-- #7 -->
-<div class="modal fade" id="imageModal-07" tabindex="-1" role="dialog" aria-labelledby="imageModal-01CenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+      <div class="my-slides"> <!-- individual slide -->
+        <div class="numberText">6 / 8: Here is some text that is describing what is happening in the image. Here is some text that is describing what is happening in the image.</div>
+        <img class="portrait-image img-fluid" src="../images/gallery/gallery-image-06.jpeg">
       </div>
-      <div class="modal-body">
-        <img class="img-fluid" src="../images/gallery/gallery-image-07.jpeg">
-        <p>Here is some text explaining the image and what is taking place</p>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- end #7 -->
 
-<!-- #8 -->
-<div class="modal fade" id="imageModal-08" tabindex="-1" role="dialog" aria-labelledby="imageModal-01CenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+      <div class="my-slides"> <!-- individual slide -->
+        <div class="numberText">7 / 8: Here is some text that is describing what is happening in the image. Here is some text that is describing what is happening in the image.</div>
+        <img class="portrait-image img-fluid" src="../images/gallery/gallery-image-07.jpeg">
       </div>
-      <div class="modal-body">
-        <img class="img-fluid" src="../images/gallery/gallery-image-08.jpeg">
-        <p>Here is some text explaining the image and what is taking place</p>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- end #8 -->
 
-<!-- #9 -->
-<div class="modal fade" id="imageModal-09" tabindex="-1" role="dialog" aria-labelledby="imageModal-01CenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+      <div class="my-slides"> <!-- individual slide -->
+        <div class="numberText">8 / 8: Here is some text that is describing what is happening in the image. Here is some text that is describing what is happening in the image.</div>
+        <img class="landscape-image img-fluid" src="../images/gallery/gallery-image-08.jpeg">
       </div>
-      <div class="modal-body">
-        <img class="img-fluid" src="../images/gallery/gallery-image-07.jpeg">
-        <p>Here is some text explaining the image and what is taking place</p>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- end #9 -->
 
-<!-- #10 -->
-<div class="modal fade" id="imageModal-10" tabindex="-1" role="dialog" aria-labelledby="imageModal-01CenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <img class="img-fluid" src="../images/gallery/gallery-image-08.jpeg">
-        <p>Here is some text explaining the image and what is taking place</p>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- end #10 -->
+      <!--next & prev buttons -->
+      <a class="prev" onclick="changeSlides(-1)">&#10094;</a>
+      <a class="next" onclick="changeSlides(1)">&#10095;</a>
 
-<!-- #11 -->
-<div class="modal fade" id="imageModal-11" tabindex="-1" role="dialog" aria-labelledby="imageModal-01CenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <img class="img-fluid" src="../images/gallery/gallery-image-dryer-02.jpg">
-        <p>Here is some text explaining the image and what is taking place</p>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- end #11 -->
+    </div> <!-- end modal content -->
 
-<!-- #12 -->
-<div class="modal fade" id="imageModal-12" tabindex="-1" role="dialog" aria-labelledby="imageModal-01CenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <img class="img-fluid" src="../images/gallery/gallery-image-dryer.jpg">
-        <p>Here is some text explaining the image and what is taking place</p>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- end #12 -->
+</div> <!-- end modal -->
 
 	<!-- Gallery End -->
 
