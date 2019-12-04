@@ -176,7 +176,7 @@ div.my-slides {
   border: 0 !important;
 }
 
-.prev, .next, .prev:active, .next:active {
+.prev, .next, .prev:active, .next:active, .prev:visited, .next:visited {
   cursor: pointer;
   position: absolute;
   top: 50%;
