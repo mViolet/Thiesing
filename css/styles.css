@@ -154,19 +154,18 @@ div.my-slides {
   max-width: 76vw;
 }
 
-.close {
-  color: #000 !important;
+#close-button {
+  color: #fff !important;
   position: absolute;
   top: 105px;
   right: 35px;
-  font-size: 20px !important;
+  font-size: 20px;
   transition: 0.3s ease;
-  text-decoration: none !important;
-  border: 0 !important;
-  opacity: 1 !important;
-  line-height: 0px !important;
+  text-decoration: none;
+  border-style: none !important;
+  line-height: 0px;
   text-shadow: none !important;
-  font-weight: bold !important;
+  font-weight: bold;
 }
 
 .close:hover, .close:focus{
@@ -177,13 +176,14 @@ div.my-slides {
 }
 
 .prev, .next {
+  opacity: .8;
   cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
   padding: 20px;
   margin-top: -50px;
-  color: #fff !important;
+  color: #bfbfbf !important;
   font-size: 3em;
   font-weight: bold;
   transition: 0.6s ease;
@@ -197,10 +197,10 @@ div.my-slides {
   border-radius: 3px 0 0 3px;
 }
 
-/*.prev:hover, .next:hover {
-  color: #777 !important;
+.prev:hover, .next:hover {
+  color: #fff !important;
   transition: 0.8s ease;
-}*/
+}
 
 .numberText {
   position: fixed;
