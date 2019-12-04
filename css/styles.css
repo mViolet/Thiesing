@@ -176,7 +176,7 @@ div.my-slides {
   border: 0 !important;
 }
 
-.prev, .next, .prev:active, .next:active, .prev:visited, .next:visited {
+.prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -197,10 +197,10 @@ div.my-slides {
   border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
+/*.prev:hover, .next:hover {
   color: #777 !important;
   transition: 0.8s ease;
-}
+}*/
 
 .numberText {
   position: fixed;
