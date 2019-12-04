@@ -37,6 +37,10 @@ body {
   margin-bottom: 20px;
 }
 
+#Banner:hover, #Banner:focus {
+  cursor: pointer;
+}
+
 /* gallery text transition styles
 -------------------------------------------------- */
 .image-container {
@@ -131,7 +135,7 @@ div.modal {
   background-color: rgba(0,0,0,0.8);
 }
 
-div.modal-content {
+div.modal-content, .modal-content2 {
   position: relative;
   margin: auto;
   background-color: transparent;
@@ -142,7 +146,7 @@ div.modal-content {
   border: none;
 }
 
-div.my-slides {
+div.my-slides, .my-slides2 {
   text-align: center;
 }
 
@@ -151,7 +155,7 @@ div.my-slides {
 }
 
 .landscape-image {
-  max-width: 76vw;
+  max-height: 75vh;
 }
 
 #close-button {
@@ -205,6 +209,7 @@ div.my-slides {
 .numberText {
   position: fixed;
   margin-right: 10px auto;
+  margin-top: 100px;
   width: 95vw;
   bottom: 20px;
   left: 15px;
@@ -216,6 +221,7 @@ div.my-slides {
   z-index: 1 !important;
   text-align: center;
   padding: 20px;
+  background-color: rgba(0,0,0,0.6);
 }
 
 /*------------------------------------------*/

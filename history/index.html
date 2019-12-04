@@ -53,9 +53,7 @@
 		<p class="container text-justify">In the 1960's the construction of Interstate 70 forced Thiesing from its Indianapolis location to its current facility in Mooresville, Indiana. A decade later the recession in the 1970's forced Thiesing to suspend operations. When the economy got back on track the plant reopened as strictly a custom cutting veneer mill and continues in that tradition today.</p>
 		<p class="container text-justify">Additional text and history information can go here. Here's to 100 years!  </p>
 
-	<a href="#Banner">
-		<img id="Banner" class="img-fluid" src="../images/assets/thiesing-history-gallery-banner-01.png" alt="">
-	</a>
+		<img onclick="openModal2(); currentSlide2(1)" id="Banner" class="img-fluid" src="../images/assets/thiesing-history-gallery-banner-01.png" alt="">
 
 
 <!-- <h1 class="container display-4 font-italic text-center">—</h1> -->
@@ -111,6 +109,100 @@
       </div>
     </footer>
 
+    <!--Modal-->
+<!---------->
+<div id="my-modal2" class="modal">
+  <!-- close button -->
+  <span id="close-button" class="close" onclick="closeModal2()">&#10006;</span>
+  <!-- slides -->
+    <div class="modal-content">
+
+      <div class="my-slides2"> <!-- individual slide -->
+        <div class="numberText">1 / 15: Here is some text that is describing what is happening in the image. Here is some text that is describing the image.</div>
+        <img class="landscape-image img-fluid" src="../images/history/gallery/hist001.jpg">
+      </div>
+
+      <div class="my-slides2"> <!-- individual slide -->
+        <div class="numberText">2 / 15: Here is some text that is describing what is happening in the image. Here is some text that is describing the image.</div>
+        <img class="landscape-image img-fluid" src="../images/history/gallery/hist002.jpg">
+      </div>
+
+      <div class="my-slides2"> <!-- individual slide -->
+        <div class="numberText">3 / 15: Here is some text that is describing what is happening in the image. Here is some text that is describing the image.</div>
+        <img class="landscape-image img-fluid" src="../images/history/gallery/hist003.jpg">
+      </div>
+
+      <div class="my-slides2"> <!-- individual slide -->
+        <div class="numberText">4 / 15: Here is some text that is describing what is happening in the image. Here is some text that is describing the image.</div>
+        <img class="landscape-image img-fluid" src="../images/history/gallery/hist004.jpg">
+      </div>
+
+      <div class="my-slides2"> <!-- individual slide -->
+        <div class="numberText">5 / 15: Here is some text that is describing what is happening in the image. Here is some text that is describing the image.</div>
+        <img class="landscape-image img-fluid" src="../images/history/gallery/hist005.jpg">
+      </div>
+
+      <div class="my-slides2"> <!-- individual slide -->
+        <div class="numberText">6 / 15: Here is some text that is describing what is happening in the image. Here is some text that is describing the image.</div>
+        <img class="landscape-image img-fluid" src="../images/history/gallery/hist006.jpg">
+      </div>
+
+      <div class="my-slides2"> <!-- individual slide -->
+        <div class="numberText">7 / 15: Here is some text that is describing what is happening in the image. Here is some text that is describing the image.</div>
+        <img class="landscape-image img-fluid" src="../images/history/gallery/hist007.jpg">
+      </div>
+
+      <div class="my-slides2"> <!-- individual slide -->
+        <div class="numberText">8 / 15: Here is some text that is describing what is happening in the image. Here is some text that is describing the image.</div>
+        <img class="landscape-image img-fluid" src="../images/history/gallery/hist008.jpg">
+      </div>
+
+      <div class="my-slides2"> <!-- individual slide -->
+        <div class="numberText">9 / 15: Here is some text that is describing what is happening in the image. Here is some text that is describing the image.</div>
+        <img class="landscape-image img-fluid" src="../images/history/gallery/hist009.jpg">
+      </div>
+
+      <div class="my-slides2"> <!-- individual slide -->
+        <div class="numberText">10 / 15: Here is some text that is describing what is happening in the image. Here is some text that is describing the image.</div>
+        <img class="landscape-image img-fluid" src="../images/history/gallery/hist010.jpg">
+      </div>
+
+      <div class="my-slides2"> <!-- individual slide -->
+        <div class="numberText">11 / 15: Here is some text that is describing what is happening in the image. Here is some text that is describing the image.</div>
+        <img class="landscape-image img-fluid" src="../images/history/gallery/hist011.jpg">
+      </div>
+
+      <div class="my-slides2"> <!-- individual slide -->
+        <div class="numberText">12 / 15: Thiesing Veneer in Mooresville, November 1967. Old Dryer #1.</div>
+        <img class="landscape-image img-fluid" src="../images/history/gallery/hist012.jpg">
+      </div>
+
+      <div class="my-slides2"> <!-- individual slide -->
+        <div class="numberText">13 / 15: Here is some text that is describing what is happening in the image. Here is some text that is describing the image.</div>
+        <img class="landscape-image img-fluid" src="../images/history/gallery/hist013.jpg">
+      </div>
+
+      <div class="my-slides2"> <!-- individual slide -->
+        <div class="numberText">14 / 15: Here is some text that is describing what is happening in the image. Here is some text that is describing the image.</div>
+        <img class="landscape-image img-fluid" src="../images/history/gallery/hist014.jpg">
+      </div>
+
+      <div class="my-slides2"> <!-- individual slide -->
+        <div class="numberText">15 / 15: Here is some text that is describing what is happening in the image. Here is some text that is describing the image.</div>
+        <img class="landscape-image img-fluid" src="../images/history/gallery/hist015.jpg">
+      </div>
+
+      <!--next & prev buttons -->
+      <a class="prev" onclick="changeSlides2(-1)">&#10094;</a>
+      <a class="next" onclick="changeSlides2(1)">&#10095;</a>
+
+    </div> <!-- end modal content -->
+
+</div> <!-- end modal -->
+
+	<!-- Gallery End -->
+
+<script src="../js/script2.js"></script>
 <script src="../js/jquery.slim.min.js"></script>
 <script src="../js/popper.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
