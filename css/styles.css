@@ -170,6 +170,7 @@ div.my-slides, .my-slides2 {
   line-height: 0px;
   text-shadow: none !important;
   font-weight: bold;
+  opacity: 1;
 }
 
 .close:hover, .close:focus{
