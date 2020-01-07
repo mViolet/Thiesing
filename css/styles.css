@@ -290,6 +290,10 @@ h1, h2, h3, p {
   margin-bottom: 100px;
 }
 
+.contact-email {
+  font-size: 1em;
+}
+
 h1:first-of-type {
 	margin-top: 20px;
 	margin-bottom: 20px;
