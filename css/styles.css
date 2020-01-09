@@ -59,7 +59,7 @@ body {
 
 .text-container {
   transition: .5s ease;
-  opacity: 1;
+  opacity: 0;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -68,12 +68,8 @@ body {
   text-align: center;
 }
 
-.image-container .trans-image {
-  opacity: 0.3;
-}
-
 .image-container:hover .trans-image {
-  opacity: 0.1;
+  opacity: 0.3;
 }
 
 .image-container:hover .text-container {
