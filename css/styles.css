@@ -8,7 +8,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  margin-bottom: 60px; /* Margin bottom by footer height */
+  margin-bottom: 60px;
 }
 .faq {
 	margin-top: 25px;
@@ -19,8 +19,8 @@ body {
   z-index: 1;
   bottom: 0;
   min-width: 100vw;
-  height: 60px; /* Set the fixed height of the footer here */
-  line-height: 60px; /* Vertically center the text there */
+  height: 60px;
+  line-height: 60px;
   background-color: #f8f9fa;
 
 }
@@ -219,11 +219,9 @@ div.my-slides, .my-slides2 {
   font-size: 18px;
   transition: 0.8s ease;
   margin: 0 auto;
-  /*background-color: rgba(255,255,255,0.5);*/
   z-index: 1 !important;
   text-align: center;
   padding: 20px;
-  /*background-color: rgba(0,0,0,0.6);*/
 }
 
 /*------------------------------------------*/
@@ -267,8 +265,6 @@ figure {
   bottom: initial;
 }
 
-/* carousel-fix end */
-
 /* responsive map fix */
 
   .map-responsive {
@@ -283,7 +279,9 @@ figure {
   height: 100%;
   width: 100%;
   position: absolute;
-  }/* responsive map fix end */
+  }
+
+  /* end */
 
 h1, h2, h3, p {
 }

@@ -1,987 +1,939 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"> <!-- animate.css -->
-  <link rel="stylesheet" type="text/css" href="../css/styles.css">
-  <link rel="stylesheet" href="../css/bootstrap.min.css">
-  <title>Thiesing Veneers | Careers</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!-- animate.css -->
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Thiesing Veneers | Careers</title>
 
-
-<!-- Newton styles start -->
-  <style>
-/* Remove jobid location etc from the job description page. */
-#gnewtonJobDescription #gnewtonJobPosition, #gnewtonJobDescription #gnewtonJobLocation, #gnewtonJobDescription #gnewtonJobID, #gnewtonJobDescription #gnewtonJobOpening, #gnewtonJobDescription hr, td#gnewtonJobLocationInfo {
-display: none;
-}
-/* Remove application code box for returning applicants to online form. */
-#gnewtonApplicationBox * {
- display: none;
-}
-/* Remove incorrect veteran status boxes on bottom of online application form. */
-#veteran31, #veteran32, #veteran33, #veteran34 {
-margin-left: 40px;
-}
-/* Make sure that images and labels display properly. */
-label {display: inline;}
-img {display: inline;}
-/* Increased spacing for generic resume submission. */
-#gnewtonGeneric td {
-padding-top: 20px !important;
-}
-/* Match fonts for the main page and submission page. */
-#gnewtonCareerBody * {
-color: #666;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 12px;
-line-height: 20px;
-}
-#gnewtonLandingArea * {
-color: #666;
-font-family: ;
-font-size: 20px;
-line-height: 45px;
-font-weight: bold;
-text-transform: uppercase;
-}
-.gnewtonCareerGroupHeaderClass {
-font-size:  !important;
-line-height: 25px !important;
-font-weight: bold;
-font-size: 14px !important;
-color: black;
-border-bottom: 1px solid #666;
-}
-/* Match fonts for the links. */
-#gnewtonCareerBody a, #gnewtonLandingArea a, div#backToCareerHome a {
-color: black;
-text-decoration: none;
-}
-#gnewtonCareerBody a:hover, #gnewtonLandingArea a:hover, div#backToCareerHome a:hover {
-color:#715f2d ;
-text-decoration: none;
-}
-/* Fix uploaded resume blue box. */
-#resumeDropped div.bar {
-padding-bottom: ;
-}
-/* Fix the Clear All Fields link. Set width to 100 or 115px if wrapping occurs. */
-.button.newtonStoreReset.block {
-color: rgb(52, 152, 219) !important;
-background-color: rgba(0,0,0,0);
-width: px;
-}
-.button.newtonStoreReset.block:hover {
-color: rgb(136, 189, 229) !important;
-}
-/* Fix Job Search Buttons */
-select#gnewtonLocation, select#gnewtonDepartment {
-width: 100%;
-}
-/* Fix Choose a File link. */
-label#resumeDropLocalFile {
-color: #3498db;
-}
-/* Fix filename in uploaded resume blue box. */
-#resumeDropped span.filename {
-color: white;
-}
-/* Fix remove link in uploaded resume blue box. */
-#resumeDropped .bar .closeBtn {
-color: #aed6f1 !important;
-text-decoration: none;
-}
-/* Bold section titles. */
-dt.gnewtonSectionTitleClass {
-font-weight: bold;
-}
-/* Bold all p inside the application. */
-#gnewtonResumeFormTable p {
-  font-size:  !important;
-  font-weight: bold;
-}
-/* Un-bold the Applicant's Statement section. */
-#gnewtonAppState p {
-  font-weight: normal;
-}
-/* Reposition the "Yes" and "No" inside the Min Qual buttons. */
-td.gnewtonQuestions div {
-line-height: 25px !important;
-color: !important;
-}
-/* Fix colors on attachment upload links. */
-label.emptyFileInput {
-    color: #3498db !important;
-}
-label.emptyFileInput:hover {
-    color: #88bde5 !important;
-}
-/* Bold uploaded attachment names. */
-div.filledFileInput span {
-    font-weight: bold;
-}
-/* Change Newton button colors to match. */
-#gnewtonCareerBody div.gnewtonBlueBtn, #gnewtonCareerBody button.gnewtonBlueBtn, div.gnewtonContinueBtn {
-    background-color: #715f2d!important;
-    font-family: ;
-    font-size: ;
-    font-weight: ;
-    line-height: ;
-    transition-delay: ;
-    transition-duration: ;
-    transition-property: ;
-    transition-timing-function: ;
-    text-align: center !important;
-}
-#gnewtonCareerBody div.gnewtonBlueBtn:hover, #gnewtonCareerBody button.gnewtonBlueBtn:hover, div.gnewtonContinueBtn:hover {  
-    background-color: #D7D7BD !important;
-}
-#gnewtonCareerBody div.gnewtonBlueBtn.disabled, #gnewtonCareerBody button.gnewtonBlueBtn.disabled, #gnewtonCareerBody div.gnewtonBlueBtn[disabled], #gnewtonCareerBody button.gnewtonBlueBtn[disabled] {
-    background: #ccd3d8 !important;
-}
-/* Adjust Indeed button colors to match. */
-#gnewtonCareerBody #gnewtonJobDescriptionBtn > div > .indeed-apply-widget > a{
-        background: #715f2d !important;
-}
-#gnewtonCareerBody #gnewtonJobDescriptionBtn > div > .indeed-apply-widget > a > span > span{
-        color: white !important;
-        font-size: !important;
-        font-weight: !important;
-        line-height: !important;
-        font-family: !important;
-}
-/* hover */
-#gnewtonCareerBody #gnewtonJobDescriptionBtn > div > .indeed-apply-widget#indeed-apply-widget > a:hover{
-        background: #D7D7BD !important;
-}
-/* once candidate has applied*/
-#gnewtonCareerBody #gnewtonJobDescriptionBtn > div > .indeed-apply-widget.indeed-apply-status-applied > a{
-        background: !important;
-}
-#gnewtonCareerBody #gnewtonJobDescriptionBtn > div > .indeed-apply-widget.indeed-apply-status-applied > a > span.indeed-apply-button-inner{
-        color: !important;
-}
-#gnewtonCareerBody #gnewtonJobDescriptionBtn > div > .indeed-apply-widget.indeed-apply-status-applied#indeed-apply-widget > a:hover{
-        background: !important;
-}
-/* Adjust vertical alignment on EEO VEVRAA options. */
-form#gnewton-vevraa-form span.radio-label {
-    top: 0px !important;
-    position: relative;
-}
-/* Fix search button text alignment. */
-div#gnewtonSearchBtn {
-    line-height: 18px;
-}
-
-/* Misc careers page edits - AN (Newton) */
-div#menu a {
-    padding-right: 30px;
-}
-div#gnewtonCareerBody {
-    margin-top: 10px;
-}
-tr#gnewtonNoActiveJobs {
-    display: none;
-}
-input#gnewotn_input_75 {
-    position: relative;
-    top: 0px;
-}
-
-input#gnewotn_input_75 {
-    position: relative;
-    top: 0px;
-}
-</style>
-<!-- Newton styles end -->
-
-
-</head>
-<body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" role="navigation">
-		<a class="navbar-brand" href="#">
-			<img class="d-inline-block align-center" src="../images/assets/Thiesing-Logo.svg" alt="Thiesing Veneer Logo" width="50px">&nbsp;&nbsp;&nbsp;Thiesing Veneer Co.
-		</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigationMenu" aria-controls="navigationMenu" aria-expanded="false" aria-label="Toggle Navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navigationMenu">
-			<div class="navbar-nav animated fadeIn">
-				<a class="nav-item nav-link" href="../index.html">Home</a>
-				<a class="nav-item nav-link" href="../history/index.html">History</a>
-				<a class="nav-item nav-link" href="../gallery/index.html">Gallery</a>
-				<a class="nav-item nav-link" href="../FAQ/index.html">FAQ</a>
-				<a class="nav-item nav-link" href="index.html">Careers</a>
-				<a class="nav-item nav-link" href="../contact/index.html">Contact</a>
-			</div>
-		</div> <!-- collapsed nav -->
-	</nav> <!-- nav -->
-
-	<div>
-		
-	</div> <!-- logo -->
-<!-- 	<div class="container careers">
-		<h1 class="display-4 font-italic">Career Opportunities</h1>
-	</div>  --> <!-- Career opportunities header div -->
-
-<div class="container"> <!--container div for newton content -->
-
-	<!-- Newton code start -->
-	<div id="page">
-  <div id="content">
-    <link rel="stylesheet" href="http://newton.newtonsoftware.com/career/css/careerv3/newton.css">
-
-
-<script src="http://newton.newtonsoftware.com/career/js/jquery-1.11.1.min.js"></script>
-<script type="text/javascript">
-    $nQuery = jQuery.noConflict(true);
-    $nQuery(window).on('beforeunload', function(){
-        window.parent.postMessage("IFRAME_BEFOREUNLOAD_EVENT","*");
-    });
-</script>
-<script src="http://newton.newtonsoftware.com/career/js/careerv3/URI.min.js"></script>
-<script src="http://newton.newtonsoftware.com/career/js/careerv3/sessionStore.js"></script>
-
-
-
-<script type="text/javascript">
-
-    //Values selected are getting rid of browsers that do not support html5 form validation
-    var $buoop = {
-        vs:{
-            i:9,
-            f:4,
-            o:10.1,
-            s:5,
-            c:10
-        },
-        reminder: 0, //0 denotes that the out of date warning should always show
-        onshow: function(infos){
-            var isIframe = false;
-            try {
-                isIframe =  window.self !== window.top;
-            } catch (e) {}
-            
-            if(isIframe) window.parent.postMessage("redirecthttp://newton.newtonsoftware.com/career/out-of-date-browser-update.html", "*");
-            else window.location.href = "http://newton.newtonsoftware.com/career/out-of-date-browser-update.html";
-        }
-    };
-
-    function $buo_f(){
-        var e = document.createElement("script");
-        e.src = "http://newton.newtonsoftware.com/career/js/careerv3/update.min.js";
-        document.body.appendChild(e);
-    };
-
-    try {
-        document.addEventListener("DOMContentLoaded", $buo_f, false)
-    }catch(e){
-        window.attachEvent("onload", $buo_f)
-    }
-</script>
-<style type="text/css">
-    body .buorg{
+    <!-- Newton styles start -->
+    <style>
+        /* Remove jobid location etc from the job description page. */
+        #gnewtonJobDescription #gnewtonJobPosition, #gnewtonJobDescription #gnewtonJobLocation, #gnewtonJobDescription #gnewtonJobID, #gnewtonJobDescription #gnewtonJobOpening, #gnewtonJobDescription hr, td#gnewtonJobLocationInfo {
         display: none;
-    }
-</style>
-
-<script type="text/javascript">
-    function formSubmitNoOverlay(fName){
-        if(fName) {
-            document.forms[fName].submit();
-        } else {
-            document.forms[0].submit();
         }
-    }
-
-    function formSubmitToSort(fName, sortField, sortFieldSecond, clickField, relatedSort) {
-        if (sortField) {
-            var descend = document.getElementById("descend").value;
-            var descendSecond = document.getElementById("descendSecond").value;
-            var clickFieldOld = document.getElementById("clickField").value;
-            var sortFieldOld = document.getElementById("sortField").value;
-            if (relatedSort) {
-                if (clickField == sortField) {
-                    document.getElementById("descend").value = descend == 'true' ? 'false' : 'true';
-                } else {
-                    document.getElementById("descendSecond").value = descendSecond == 'true' ? 'false' : 'true';
-                }
-                document.getElementById("sortField").value = sortField;
-            } else {
-                if (sortFieldOld == sortField) {
-                    document.getElementById("descend").value = descend == 'true' ? 'false' : 'true';
-                } else {
-                    document.getElementById("descend").value = descendSecond == 'true' ? 'false' : 'true';
-                    document.getElementById("sortField").value = sortField;
-                    document.getElementById("descendSecond").value = descend;
-                    document.getElementById("sortFieldSecond").value = sortFieldSecond;
-                }
-            }
-        } else {
-            // Fix bug NWTN-13339, when client remove like, set all sort info as default (Empty).
-            document.getElementById("descend").value = '';
-            document.getElementById("sortField").value = 'jobTitle';
-            document.getElementById("descendSecond").value = '';
-            document.getElementById("sortFieldSecond").value = '';
-            if (document.getElementById("gnewtonKeyword")) {
-                document.getElementById("gnewtonKeyword").value = '';
-            }
-
-            if (document.getElementById("gnewtonDepartment")) {
-                document.getElementById("gnewtonDepartment").options[0].selected = true;
-            }
-
-            if (document.getElementById("gnewtonLocation")) {
-                document.getElementById("gnewtonLocation").options[0].selected = true;
-            } 
-            
-            if (document.getElementById("gnewtonState") && document.getElementById("gnewtonCity")) {
-                document.getElementById("gnewtonState").options[0].selected = true;
-                document.getElementById("gnewtonCity").options[0].selected = true;
-            }
-
-            if (document.getElementById("gnewtonZipCode")) {
-                document.getElementById("gnewtonZipCode").options[0].selected = true;
-            } 
-
-            formSubmitNoOverlay(fName);
+        /* Remove application code box for returning applicants to online form. */
+        #gnewtonApplicationBox * {
+         display: none;
         }
-        if (document.getElementById("clickField")) {
-            document.getElementById("clickField").value = clickField;
+        /* Remove incorrect veteran status boxes on bottom of online application form. */
+        #veteran31, #veteran32, #veteran33, #veteran34 {
+        margin-left: 40px;
         }
-        formSubmitNoOverlay(fName);
-    }
-
-    function onStateChange(option) {
-        var cityList = [];
-        var isCitySelected = false;
-        var selectedState = $("#gnewtonState").find("option:selected").text();
-        var checkedState;
-        $("#gnewtonCity").empty();
-        $("#gnewtonCity").append("<option value=''>All Cities</option>");
-        if (selectedState == "All States") {
-            $("#gnewtonCity").attr("disabled", true);
-            $("#gnewtonCity").attr("title", 'Select a state first.');
-            elementColorChangeGray($("#gnewtonCity"));
-            $("#gnewtonZipCode").attr("disabled", true);
-            elementColorChangeGray($("#gnewtonZipCode"));
-        } else if ($("input#hiddenState[name='"+selectedState+"']").length > 0) {
-            $("input#hiddenState[name='"+selectedState+"']").each(function(index, item){
-                if (cityList.indexOf(item.defaultValue) === -1 && item.defaultValue != "") {
-                    cityList.push(item.defaultValue);
-                    var option = $("<option>").val(item.defaultValue).text(item.defaultValue);
-                    if (item.checked) {
-                        checkedState = item.name;
-                    }
-                    if (item.name == checkedState && item.defaultValue == $("input[name='selectedCity']").val()) {
-                        option.attr("selected", "selected");
-                        isCitySelected = true;
-                    }
-                    $("#gnewtonCity").append(option);
-                }
-            });
-            $("#gnewtonCity").removeAttr("disabled");
-            $("#gnewtonCity").removeAttr("title");
-            $("#gnewtonCity").css("color", "#4f4e59");
-        } 
-        handleSelectorChange("City");   
-    }
-
-    function elementColorChangeGray(element) {
-        element.css("color", "#afb5ba");
-    }
-
-    function elementColorChangeDefault(element) {
-        element.css("color", "#4f4e59");
-    }
-
-    function onStateClick() {
-        var stateList = [];
-        var selectedState = false;
-        elementColorChangeGray($("#gnewtonCity"));
-        elementColorChangeGray($("#gnewtonZipCode"));
-        if ($("#gnewtonState option").length == 1) {
-            $("input[type='checkbox'][id='hiddenState']").each(function(index, item){
-                if (stateList.indexOf(item.name) === -1 && item.name != "") {
-                    stateList.push(item.name);
-                    var option = $("<option>").val(item.name).text(item.name);
-                    if (item.checked) {
-                        option.attr("selected", "selected");
-                        selectedState = true;
-                    }
-                    $("#gnewtonState").append(option);
-                }
-            });
-            if (selectedState) {
-                onStateChange();
-            }
+        /* Make sure that images and labels display properly. */
+        label {display: inline;}
+        img {display: inline;}
+        /* Increased spacing for generic resume submission. */
+        #gnewtonGeneric td {
+        padding-top: 20px !important;
         }
-    }
-
-    function initLocation() {
-        var locationList = [];
-        var isLocationSelected = false;
-        $("input.hiddenLocation").each(function(index, item){
-            if (locationList.indexOf(item.name) === -1) {
-                locationList.push(item.name);
-                var option = $("<option>").val(item.name).text(item.name);
-                if (item.checked) {
-                    option.attr("selected", "selected");
-                    isLocationSelected = true;
-                }
-                $("#gnewtonLocation").append(option);
-            }
-        });
-        if (isLocationSelected) {
-            handleSelectorChange("Location");
-        }
-    }
-
-    function handleSelectorChange(type) {
-        var zipCodeList = [];
-        var selectedOption = $("#gnewton" + type).find("option:selected").text();
-        var selectedValue = $("#gnewton" + type).find("option:selected").val();
-        var checkedName;
-        $("#gnewtonZipCode").empty();
-        $("#gnewtonZipCode").append("<option value=''>All Postal Codes</option>");
-        if (selectedValue == "") {
-            $("#gnewtonZipCode").attr("disabled", true);
-            elementColorChangeGray($("#gnewtonZipCode"));
-        } else {
-            $("input#hiddenZipCode[name='"+selectedOption+"']").each(function(index, item){
-                if (zipCodeList.indexOf(item.defaultValue) === -1 && item.defaultValue != "") {
-                    zipCodeList.push(item.defaultValue);
-                    var option = $("<option>").val(item.defaultValue).text(item.defaultValue);
-                    if (item.checked) {
-                        checkedName = item.name;
-                    }
-                    if (item.name == checkedName && item.defaultValue == $("input[name='selectedZipCode']").val()) {
-                        option.attr("selected", "selected");
-                    }
-                    $("#gnewtonZipCode").append(option);
-                }
-            });
-            $("#gnewtonZipCode").removeAttr("disabled");
-            $("#gnewtonZipCode").css("color", "#4f4e59");
-        }
-    };
-
-    // call function in windows.onload event
-    function addToOnloadEvent(functionName) {
-        if (document.all){
-            window.attachEvent('onload', functionName)
-        }
-        else{
-            window.addEventListener('load', functionName, false);
-        }
-    }
-
-    function getParameters(para, url, arg) {
-        var args = '';
-
-        var p = url.indexOf('?' + para);
-
-        if (p == -1) {
-            p = url.indexOf('&' + para);
-        }
-
-        if (p != -1) {
-            p += (para.length + 1);
-
-            var p2 = url.indexOf('&', p);
-            if (p2 == -1)
-                p2 = url.length;
-
-            args = arg + url.substring(p, p2);
-        }
-
-        return args;
-    }
-
-    //if parent page url contains a gns parameter, it will change all job apply url
-    function modifyJobURL() {
-        //Fix #11882
-        if ($("#gnewtonState")) {
-            onStateClick();
-            initLocation();
-        }
-        var newSource = getParameters('gns', location.href, '');
-
-        if (!newSource) {
-            return;
-        }
-        newSource = newSource.substring(1);
-
-        var links = document.getElementsByTagName("a");
-        if (!links) {
-            return;
-        }
-        for (var i = 0; i < links.length; i++) {
-            var e = links[i];
-            if (e.href.indexOf('JobIntroduction.action') != -1) {
-                e.href = setQueryStringParameter(e.href, 'source', newSource);
-            }
-        }
-    }
-
-    function setQueryStringParameter(url, paramName, paramValue) {
-        if (!url) {
-            return "";
-        } else if (url.indexOf(paramName) != -1) {
-            var regex = new RegExp('(' + paramName + '=)[^\&]*');
-            return url.replace(regex, paramName + '=' + paramValue);
-        }  else if (url.endsWith('?') || url.endsWith('&')) {
-            return url + paramName + '=' + paramValue;
-        } else if (url.indexOf('?') != -1) {
-            return url + '&' + paramName + '=' + paramValue;
-        } else {
-            return url + '?' + paramName + '=' + paramValue;
-        }
-    }
-
-    addToOnloadEvent(modifyJobURL);
-</script>
-
-
-<style>
-    .gnewtonJobLink a, .gnewtonJobLink a:visited, .gnewtonJobNode a, .gnewtonJobNode a:visited, .gnewtonNode a, .gnewtonNode a:visited, .gnewtonCareerGroupJobTitleClass a, .gnewtonCareerGroupJobTitleClass a:visited{
-        line-height: 18px;
-        display: block;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-    }
-    .gnewtonCareerBodyClass *, .gnewtonLandingAreaClass * {
-        font-size:12px;
-        font-family:arial,helvetica,sans-serif;
-    }
-    .gnewtonCareerBodyClass img {
-        cursor: pointer;
-    }
-    .gnewtonCareerBodyClass table{
-        border-collapse: collapse;
-        table-layout: fixed;
-        width: 100%;
-    }
-    #gnewtonCareerBody form input,#gnewtonCareerBody form textarea,#gnewtonCareerBody form select,.non-form-input{
-        margin: 0px;
-        padding: 0;
-        float: none;
-    }
-    .gnewtonImgArrow{
-        text-decoration: none;
-        border: 0px solid #ffffff;
-        display:inline;
-    }
-
-    #gnewtonCareerHome .gnewtonJobFilter .gnewtonComboSearch .gnewtonKeywordInput {
-        width:235px;
-        height: 32px;
-        border-radius: 2px;
-        border: solid 1px #ccd3d8;
-        padding: 0 5px;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-    }
-
-    .gnewtonComboSearch {
-        padding:0 9px 0 0;
-    }
-    .gnewtonNode{
-        display: list-item;
-        margin: 0px;
-        list-style-type:none;
-    }
-    .gnewtonTest{
-        margin:0;
-        padding: 0;
-    }
-
-    .gnewtonJobLink, .gnewtonJobNode{
-        text-align: left;
-        padding-right: 6px;
-        text-overflow: ellipsis;
-        overflow-x: hidden;
-    }
-    .gnewtonJobLink a, .gnewtonJobList a, .gnewtonCareerGroupRowClass .gnewtonCareerGroupJobTitleClass a {
-        display: inline;
-    }
-    .gnewtonJobLocation {
-        text-align: right;
-        width: 30%;
-        overflow: hidden;
-        white-space: nowrap;
-        -ms-text-overflow: ellipsis;
-        text-overflow: ellipsis;
-    }
-
-    #gnewtonCareerBody div.gnewtonBlueBtn {
-        height:15px;
-        padding: 7px 10px 8px;
-    }
-
-    #gnewtonCareerBody div.gnewtonSearchBtnClass {
-        line-height: 15px;
-    }
-
-    .gnewtonLocationClass {
-        width:auto;
-    }
-    .gnewtonStateClass {
-        width:auto;
-    }
-    .gnewtonCityClass {
-        width:auto;
-    }
-    .gnewtonHidden {
-        display: none;
-    }
-    .gnewtonDepartmentClass, .gnewtonLocationClass, .gnewtonStateClass, .gnewtonCityClass, .gnewtonZipCodeClass {
-        height: 30px;
-        width: 120px;
-        border: solid 1px #ccd3d8;
-        border-radius: 2px;
-        color: #4f4e59;
+        /* Match fonts for the main page and submission page. */
+        #gnewtonCareerBody * {
+        color: #666;
+        font-family: Arial, Helvetica, sans-serif;
         font-size: 12px;
-        line-height: 14px;
-    }
-    #gnewtonDepartment{
-        width: 120px;
-    }
-    .gnewtonJobList{
-        margin: 0;
-        padding: 0;
-    }
-
-    .gnewtonCareerBodyClass table.gnewtonJobFilter{
-        margin-bottom: 21px;
-        width: auto;
-    }
-    #gnewtonCareerBody .gnewtonJobListWithLocation .gnewtonColumnHeaders th{
-        padding-bottom: 6px;
+        line-height: 20px;
+        }
+        #gnewtonLandingArea * {
+        color: #666;
+        font-family: ;
+        font-size: 20px;
+        line-height: 45px;
         font-weight: bold;
-    }
-
-    #gnewtonGeneric > td{
-        padding-top: 12px;
-    }
-
-
-/*Group By Department*/
-    .gnewtonCategoryBar{
-        font-size: 14px;
-        cursor: pointer;
-    }
-    .gnewtonUlTag{
-        padding: 6px 0 0 15px;
-        cursor: pointer;
-    }
-    .gnewtonDefault{
-        margin-bottom: 14px;
-        cursor: pointer;
-        position: relative;
-    }
-    .gnewtonDefault svg{
-        width: 10px;
-        height: 10px;
-        stroke-width: 2px;
-    }
-    .gnewtonDefault.expanded svg line.horizontal{
-        display: none;
-    }
-
-/* EXPANDED - Group By Department*/
-    .gnewtonCareerGroupHeaderClass {
-        font-size: 16px;
-        margin-top: 21px;
-        overflow: hidden;
-    }
-    .gnewtonCareerGroupRowClass {
-        flex-wrap: nowrap;
-        flex-flow: row;
-
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-
-        -webkit-flex-flow: row;
-        justify-content: space-around;
-        margin-top: 2px;
-    }
-    .gnewtonCareerGroupHeaderClass:first-child{
-        margin: 0;
-    }
-    .gnewtonCareerGroupJobTitleClass {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        padding-right: 6px;
-    }
-    .gnewtonCareerGroupJobDescriptionClass {
-        -webkit-flex: 1 1 100px;
-        flex: 1 1 100px;
-        min-width: 105px;
-        text-align: right;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-    @media (max-width: 600px) {
-        #gnewtonDepartmentCell, #gnewtonLocationCell, #gnewtonCityCell{
+        text-transform: uppercase;
+        }
+        .gnewtonCareerGroupHeaderClass {
+        font-size:  !important;
+        line-height: 25px !important;
+        font-weight: bold;
+        font-size: 14px !important;
+        color: black;
+        border-bottom: 1px solid #666;
+        }
+        /* Match fonts for the links. */
+        #gnewtonCareerBody a, #gnewtonLandingArea a, div#backToCareerHome a {
+        color: black;
+        text-decoration: none;
+        }
+        #gnewtonCareerBody a:hover, #gnewtonLandingArea a:hover, div#backToCareerHome a:hover {
+        color:#715f2d ;
+        text-decoration: none;
+        }
+        /* Fix uploaded resume blue box. */
+        #resumeDropped div.bar {
+        padding-bottom: ;
+        }
+        /* Fix the Clear All Fields link. Set width to 100 or 115px if wrapping occurs. */
+        .button.newtonStoreReset.block {
+        color: rgb(52, 152, 219) !important;
+        background-color: rgba(0,0,0,0);
+        width: px;
+        }
+        .button.newtonStoreReset.block:hover {
+        color: rgb(136, 189, 229) !important;
+        }
+        /* Fix Job Search Buttons */
+        select#gnewtonLocation, select#gnewtonDepartment {
+        width: 100%;
+        }
+        /* Fix Choose a File link. */
+        label#resumeDropLocalFile {
+        color: #3498db;
+        }
+        /* Fix filename in uploaded resume blue box. */
+        #resumeDropped span.filename {
+        color: white;
+        }
+        /* Fix remove link in uploaded resume blue box. */
+        #resumeDropped .bar .closeBtn {
+        color: #aed6f1 !important;
+        text-decoration: none;
+        }
+        /* Bold section titles. */
+        dt.gnewtonSectionTitleClass {
+        font-weight: bold;
+        }
+        /* Bold all p inside the application. */
+        #gnewtonResumeFormTable p {
+          font-size:  !important;
+          font-weight: bold;
+        }
+        /* Un-bold the Applicant's Statement section. */
+        #gnewtonAppState p {
+          font-weight: normal;
+        }
+        /* Reposition the "Yes" and "No" inside the Min Qual buttons. */
+        td.gnewtonQuestions div {
+        line-height: 25px !important;
+        color: !important;
+        }
+        /* Fix colors on attachment upload links. */
+        label.emptyFileInput {
+            color: #3498db !important;
+        }
+        label.emptyFileInput:hover {
+            color: #88bde5 !important;
+        }
+        /* Bold uploaded attachment names. */
+        div.filledFileInput span {
+            font-weight: bold;
+        }
+        /* Change Newton button colors to match. */
+        #gnewtonCareerBody div.gnewtonBlueBtn, #gnewtonCareerBody button.gnewtonBlueBtn, div.gnewtonContinueBtn {
+            background-color: #715f2d!important;
+            font-family: ;
+            font-size: ;
+            font-weight: ;
+            line-height: ;
+            transition-delay: ;
+            transition-duration: ;
+            transition-property: ;
+            transition-timing-function: ;
+            text-align: center !important;
+        }
+        #gnewtonCareerBody div.gnewtonBlueBtn:hover, #gnewtonCareerBody button.gnewtonBlueBtn:hover, div.gnewtonContinueBtn:hover {  
+            background-color: #D7D7BD !important;
+        }
+        #gnewtonCareerBody div.gnewtonBlueBtn.disabled, #gnewtonCareerBody button.gnewtonBlueBtn.disabled, #gnewtonCareerBody div.gnewtonBlueBtn[disabled], #gnewtonCareerBody button.gnewtonBlueBtn[disabled] {
+            background: #ccd3d8 !important;
+        }
+        /* Adjust Indeed button colors to match. */
+        #gnewtonCareerBody #gnewtonJobDescriptionBtn > div > .indeed-apply-widget > a{
+                background: #715f2d !important;
+        }
+        #gnewtonCareerBody #gnewtonJobDescriptionBtn > div > .indeed-apply-widget > a > span > span{
+                color: white !important;
+                font-size: !important;
+                font-weight: !important;
+                line-height: !important;
+                font-family: !important;
+        }
+        /* hover */
+        #gnewtonCareerBody #gnewtonJobDescriptionBtn > div > .indeed-apply-widget#indeed-apply-widget > a:hover{
+                background: #D7D7BD !important;
+        }
+        /* once candidate has applied*/
+        #gnewtonCareerBody #gnewtonJobDescriptionBtn > div > .indeed-apply-widget.indeed-apply-status-applied > a{
+                background: !important;
+        }
+        #gnewtonCareerBody #gnewtonJobDescriptionBtn > div > .indeed-apply-widget.indeed-apply-status-applied > a > span.indeed-apply-button-inner{
+                color: !important;
+        }
+        #gnewtonCareerBody #gnewtonJobDescriptionBtn > div > .indeed-apply-widget.indeed-apply-status-applied#indeed-apply-widget > a:hover{
+                background: !important;
+        }
+        /* Adjust vertical alignment on EEO VEVRAA options. */
+        form#gnewton-vevraa-form span.radio-label {
+            top: 0px !important;
+            position: relative;
+        }
+        /* Fix search button text alignment. */
+        div#gnewtonSearchBtn {
+            line-height: 18px;
+        }
+        
+        /* Misc careers page edits - AN (Newton) */
+        div#menu a {
+            padding-right: 30px;
+        }
+        div#gnewtonCareerBody {
+            margin-top: 10px;
+        }
+        tr#gnewtonNoActiveJobs {
             display: none;
         }
-        #gnewtonSearchButtonCell{
-            width: 70px;
+        input#gnewotn_input_75 {
+            position: relative;
+            top: 0px;
         }
-        .gnewtonKeywordInput{
-            width: 100%;
+        
+        input#gnewotn_input_75 {
+            position: relative;
+            top: 0px;
         }
-        .gnewtonJobFilter{
-            width: 100% !important;
-        }
-        .gnewtonJobLocation {
-            width: 110px;
-        }
-    }
+    </style>
+    <!-- Newton styles end -->
 
-    .gnewtonSortByJob {
-        float: left;
-        margin-bottom: 21px;
-        cursor: pointer;
-        line-height: normal;
-    }
+</head>
 
-    .gnewtonSortByLocationOrDepartment {
-        float: right;
-        margin-bottom: 21px;
-        cursor: pointer;
-    }
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" role="navigation">
+        <a class="navbar-brand" href="#">
+            <img class="d-inline-block align-center" src="../images/assets/Thiesing-Logo.svg" alt="Thiesing Veneer Logo" width="50px">&nbsp;&nbsp;&nbsp;Thiesing Veneer Co.
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigationMenu" aria-controls="navigationMenu" aria-expanded="false" aria-label="Toggle Navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navigationMenu">
+            <div class="navbar-nav animated fadeIn">
+                <a class="nav-item nav-link" href="../index.html">Home</a>
+                <a class="nav-item nav-link" href="../history/index.html">History</a>
+                <a class="nav-item nav-link" href="../gallery/index.html">Gallery</a>
+                <a class="nav-item nav-link" href="../FAQ/index.html">FAQ</a>
+                <a class="nav-item nav-link" href="index.html">Careers</a>
+                <a class="nav-item nav-link" href="../contact/index.html">Contact</a>
+            </div>
+        </div>
+        <!-- collapsed nav -->
+    </nav>
+    <!-- nav -->
 
-    .arrow-btn {
-        float: right;
-        margin-top: 4px;
-        margin-left: 8px;
-        border-left: 5px solid transparent;
-        border-right: 5px solid transparent;
-    }
-    
-    .arrow-up {
-        border-bottom: 5px solid #3498DB;
-    }
+    <div>
 
-    .arrow-up-disable {
-        border-bottom: 5px solid #ccd3d8;
-    }
-
-    .arrow-down {
-        border-top: 5px solid #3498DB;
-    }
-
-    .arrow-down-disable {
-        border-top: 5px solid #ccd3d8;
-    }
-</style>
-<script src="http://newton.newtonsoftware.com/career/js/jquery-1.11.1.min.js"></script>
-
-
-
-<div id = "gnewtonCareerBody" class="gnewtonCareerBodyClass">
-    <div id="gnewtonLandingArea" class="gnewtonLandingAreaClass">
-        <p>Career Opportunities</p>
     </div>
-    <form name="candidateHome" method="POST" action="http://newton.newtonsoftware.com/career/CareerHomeSearch.action?clientId=8a7882605ab6ecbb015aba5e4c8e78c4">
-        <input type="hidden" id="csrf-token" name="csrf-token" value="" />
-        <input type="hidden" id="isMobileDevice" name="isMobileDevice" value="null"/>
-        <input type='hidden' name='sortField' id='sortField' value='jobTitle'/>
-        <input type='hidden' name='descend' id='descend' value='false'/>
-        <input type='hidden' name='sortFieldSecond' id='sortFieldSecond' value=''/>
-        <input type='hidden' name='descendSecond' id='descendSecond' value='false'/>
-        <input type='hidden' name='clickField' id='clickField' value=''/>
-        <table id="gnewtonCareerHome">
-            
-            
-                
-                
-                
-                
-                     
+    <!-- logo -->
+    <!-- <div class="container careers">
+        <h1 class="display-4 font-italic">Career Opportunities</h1>
+    </div> -->
+    <!-- Career opportunities header div -->
 
+    <div class="container">
+        <!--container div for newton content -->
 
+        <!-- Newton code start -->
+        <div id="page">
+            <div id="content">
+                <link rel="stylesheet" href="http://newton.newtonsoftware.com/career/css/careerv3/newton.css">
 
-    <tr>
-        <th>
-            <div class="gnewtonSortByJob" onclick="formSubmitToSort('candidateHome', 'department', 'location', 'department', true)">
-                <a>Department</a>
-                
-                
-                    
-                    
-                        <div class="arrow-btn arrow-up"></div>
-                    
-                
-            </div>
-            <div class="gnewtonSortByLocationOrDepartment" onclick="formSubmitToSort('candidateHome', 'department', 'location', 'location', true)">
-                <a>Location</a>
-                
-                
-                    
-                    
-                        <div class="arrow-btn arrow-up-disable"></div>
-                    
-                
-            </div>
-        </th>
-    </tr>
+                <script src="http://newton.newtonsoftware.com/career/js/jquery-1.11.1.min.js"></script>
+                <script type="text/javascript">
+                    $nQuery = jQuery.noConflict(true);
+                    $nQuery(window).on('beforeunload', function(){
+                        window.parent.postMessage("IFRAME_BEFOREUNLOAD_EVENT","*");
+                    });
+                </script>
+                <script src="http://newton.newtonsoftware.com/career/js/careerv3/URI.min.js"></script>
+                <script src="http://newton.newtonsoftware.com/career/js/careerv3/sessionStore.js"></script>
 
-<tr>
-    <td nowrap="nowrap">
-        
-            
-        
-            
-                <div class="gnewtonCareerGroupHeaderClass">
-                    General Labor
-                </div>
+                <script type="text/javascript">
+                    //Values selected are getting rid of browsers that do not support html5 form validation
+                    var $buoop = {
+                        vs:{
+                            i:9,
+                            f:4,
+                            o:10.1,
+                            s:5,
+                            c:10
+                        },
+                        reminder: 0, //0 denotes that the out of date warning should always show
+                        onshow: function(infos){
+                            var isIframe = false;
+                            try {
+                                isIframe =  window.self !== window.top;
+                            } catch (e) {}
+                            
+                            if(isIframe) window.parent.postMessage("redirecthttp://newton.newtonsoftware.com/career/out-of-date-browser-update.html", "*");
+                            else window.location.href = "http://newton.newtonsoftware.com/career/out-of-date-browser-update.html";
+                        }
+                    };
                 
-                    <div class="gnewtonCareerGroupRowClass">
-                        <div class="gnewtonCareerGroupJobTitleClass">
-                            <a href="http://newton.newtonsoftware.com/career/JobIntroduction.action?clientId=8a7882605ab6ecbb015aba5e4c8e78c4&id=8a7882525bc77931015bee6dae656c29&source=" ns-qa="1st and 2nd Shift Material Handlers">
+                    function $buo_f(){
+                        var e = document.createElement("script");
+                        e.src = "http://newton.newtonsoftware.com/career/js/careerv3/update.min.js";
+                        document.body.appendChild(e);
+                    };
+                
+                    try {
+                        document.addEventListener("DOMContentLoaded", $buo_f, false)
+                    }catch(e){
+                        window.attachEvent("onload", $buo_f)
+                    }
+                </script>
+                <style type="text/css">
+                    body .buorg{
+                        display: none;
+                    }
+                </style>
+
+                <script type="text/javascript">
+                    function formSubmitNoOverlay(fName){
+                        if(fName) {
+                            document.forms[fName].submit();
+                        } else {
+                            document.forms[0].submit();
+                        }
+                    }
+                
+                    function formSubmitToSort(fName, sortField, sortFieldSecond, clickField, relatedSort) {
+                        if (sortField) {
+                            var descend = document.getElementById("descend").value;
+                            var descendSecond = document.getElementById("descendSecond").value;
+                            var clickFieldOld = document.getElementById("clickField").value;
+                            var sortFieldOld = document.getElementById("sortField").value;
+                            if (relatedSort) {
+                                if (clickField == sortField) {
+                                    document.getElementById("descend").value = descend == 'true' ? 'false' : 'true';
+                                } else {
+                                    document.getElementById("descendSecond").value = descendSecond == 'true' ? 'false' : 'true';
+                                }
+                                document.getElementById("sortField").value = sortField;
+                            } else {
+                                if (sortFieldOld == sortField) {
+                                    document.getElementById("descend").value = descend == 'true' ? 'false' : 'true';
+                                } else {
+                                    document.getElementById("descend").value = descendSecond == 'true' ? 'false' : 'true';
+                                    document.getElementById("sortField").value = sortField;
+                                    document.getElementById("descendSecond").value = descend;
+                                    document.getElementById("sortFieldSecond").value = sortFieldSecond;
+                                }
+                            }
+                        } else {
+                            // Fix bug NWTN-13339, when client remove like, set all sort info as default (Empty).
+                            document.getElementById("descend").value = '';
+                            document.getElementById("sortField").value = 'jobTitle';
+                            document.getElementById("descendSecond").value = '';
+                            document.getElementById("sortFieldSecond").value = '';
+                            if (document.getElementById("gnewtonKeyword")) {
+                                document.getElementById("gnewtonKeyword").value = '';
+                            }
+                
+                            if (document.getElementById("gnewtonDepartment")) {
+                                document.getElementById("gnewtonDepartment").options[0].selected = true;
+                            }
+                
+                            if (document.getElementById("gnewtonLocation")) {
+                                document.getElementById("gnewtonLocation").options[0].selected = true;
+                            } 
+                            
+                            if (document.getElementById("gnewtonState") && document.getElementById("gnewtonCity")) {
+                                document.getElementById("gnewtonState").options[0].selected = true;
+                                document.getElementById("gnewtonCity").options[0].selected = true;
+                            }
+                
+                            if (document.getElementById("gnewtonZipCode")) {
+                                document.getElementById("gnewtonZipCode").options[0].selected = true;
+                            } 
+                
+                            formSubmitNoOverlay(fName);
+                        }
+                        if (document.getElementById("clickField")) {
+                            document.getElementById("clickField").value = clickField;
+                        }
+                        formSubmitNoOverlay(fName);
+                    }
+                
+                    function onStateChange(option) {
+                        var cityList = [];
+                        var isCitySelected = false;
+                        var selectedState = $("#gnewtonState").find("option:selected").text();
+                        var checkedState;
+                        $("#gnewtonCity").empty();
+                        $("#gnewtonCity").append("<option value=''>All Cities</option>");
+                        if (selectedState == "All States") {
+                            $("#gnewtonCity").attr("disabled", true);
+                            $("#gnewtonCity").attr("title", 'Select a state first.');
+                            elementColorChangeGray($("#gnewtonCity"));
+                            $("#gnewtonZipCode").attr("disabled", true);
+                            elementColorChangeGray($("#gnewtonZipCode"));
+                        } else if ($("input#hiddenState[name='"+selectedState+"']").length > 0) {
+                            $("input#hiddenState[name='"+selectedState+"']").each(function(index, item){
+                                if (cityList.indexOf(item.defaultValue) === -1 && item.defaultValue != "") {
+                                    cityList.push(item.defaultValue);
+                                    var option = $("<option>").val(item.defaultValue).text(item.defaultValue);
+                                    if (item.checked) {
+                                        checkedState = item.name;
+                                    }
+                                    if (item.name == checkedState && item.defaultValue == $("input[name='selectedCity']").val()) {
+                                        option.attr("selected", "selected");
+                                        isCitySelected = true;
+                                    }
+                                    $("#gnewtonCity").append(option);
+                                }
+                            });
+                            $("#gnewtonCity").removeAttr("disabled");
+                            $("#gnewtonCity").removeAttr("title");
+                            $("#gnewtonCity").css("color", "#4f4e59");
+                        } 
+                        handleSelectorChange("City");   
+                    }
+                
+                    function elementColorChangeGray(element) {
+                        element.css("color", "#afb5ba");
+                    }
+                
+                    function elementColorChangeDefault(element) {
+                        element.css("color", "#4f4e59");
+                    }
+                
+                    function onStateClick() {
+                        var stateList = [];
+                        var selectedState = false;
+                        elementColorChangeGray($("#gnewtonCity"));
+                        elementColorChangeGray($("#gnewtonZipCode"));
+                        if ($("#gnewtonState option").length == 1) {
+                            $("input[type='checkbox'][id='hiddenState']").each(function(index, item){
+                                if (stateList.indexOf(item.name) === -1 && item.name != "") {
+                                    stateList.push(item.name);
+                                    var option = $("<option>").val(item.name).text(item.name);
+                                    if (item.checked) {
+                                        option.attr("selected", "selected");
+                                        selectedState = true;
+                                    }
+                                    $("#gnewtonState").append(option);
+                                }
+                            });
+                            if (selectedState) {
+                                onStateChange();
+                            }
+                        }
+                    }
+                
+                    function initLocation() {
+                        var locationList = [];
+                        var isLocationSelected = false;
+                        $("input.hiddenLocation").each(function(index, item){
+                            if (locationList.indexOf(item.name) === -1) {
+                                locationList.push(item.name);
+                                var option = $("<option>").val(item.name).text(item.name);
+                                if (item.checked) {
+                                    option.attr("selected", "selected");
+                                    isLocationSelected = true;
+                                }
+                                $("#gnewtonLocation").append(option);
+                            }
+                        });
+                        if (isLocationSelected) {
+                            handleSelectorChange("Location");
+                        }
+                    }
+                
+                    function handleSelectorChange(type) {
+                        var zipCodeList = [];
+                        var selectedOption = $("#gnewton" + type).find("option:selected").text();
+                        var selectedValue = $("#gnewton" + type).find("option:selected").val();
+                        var checkedName;
+                        $("#gnewtonZipCode").empty();
+                        $("#gnewtonZipCode").append("<option value=''>All Postal Codes</option>");
+                        if (selectedValue == "") {
+                            $("#gnewtonZipCode").attr("disabled", true);
+                            elementColorChangeGray($("#gnewtonZipCode"));
+                        } else {
+                            $("input#hiddenZipCode[name='"+selectedOption+"']").each(function(index, item){
+                                if (zipCodeList.indexOf(item.defaultValue) === -1 && item.defaultValue != "") {
+                                    zipCodeList.push(item.defaultValue);
+                                    var option = $("<option>").val(item.defaultValue).text(item.defaultValue);
+                                    if (item.checked) {
+                                        checkedName = item.name;
+                                    }
+                                    if (item.name == checkedName && item.defaultValue == $("input[name='selectedZipCode']").val()) {
+                                        option.attr("selected", "selected");
+                                    }
+                                    $("#gnewtonZipCode").append(option);
+                                }
+                            });
+                            $("#gnewtonZipCode").removeAttr("disabled");
+                            $("#gnewtonZipCode").css("color", "#4f4e59");
+                        }
+                    };
+                
+                    // call function in windows.onload event
+                    function addToOnloadEvent(functionName) {
+                        if (document.all){
+                            window.attachEvent('onload', functionName)
+                        }
+                        else{
+                            window.addEventListener('load', functionName, false);
+                        }
+                    }
+                
+                    function getParameters(para, url, arg) {
+                        var args = '';
+                
+                        var p = url.indexOf('?' + para);
+                
+                        if (p == -1) {
+                            p = url.indexOf('&' + para);
+                        }
+                
+                        if (p != -1) {
+                            p += (para.length + 1);
+                
+                            var p2 = url.indexOf('&', p);
+                            if (p2 == -1)
+                                p2 = url.length;
+                
+                            args = arg + url.substring(p, p2);
+                        }
+                
+                        return args;
+                    }
+                
+                    //if parent page url contains a gns parameter, it will change all job apply url
+                    function modifyJobURL() {
+                        //Fix #11882
+                        if ($("#gnewtonState")) {
+                            onStateClick();
+                            initLocation();
+                        }
+                        var newSource = getParameters('gns', location.href, '');
+                
+                        if (!newSource) {
+                            return;
+                        }
+                        newSource = newSource.substring(1);
+                
+                        var links = document.getElementsByTagName("a");
+                        if (!links) {
+                            return;
+                        }
+                        for (var i = 0; i < links.length; i++) {
+                            var e = links[i];
+                            if (e.href.indexOf('JobIntroduction.action') != -1) {
+                                e.href = setQueryStringParameter(e.href, 'source', newSource);
+                            }
+                        }
+                    }
+                
+                    function setQueryStringParameter(url, paramName, paramValue) {
+                        if (!url) {
+                            return "";
+                        } else if (url.indexOf(paramName) != -1) {
+                            var regex = new RegExp('(' + paramName + '=)[^\&]*');
+                            return url.replace(regex, paramName + '=' + paramValue);
+                        }  else if (url.endsWith('?') || url.endsWith('&')) {
+                            return url + paramName + '=' + paramValue;
+                        } else if (url.indexOf('?') != -1) {
+                            return url + '&' + paramName + '=' + paramValue;
+                        } else {
+                            return url + '?' + paramName + '=' + paramValue;
+                        }
+                    }
+                
+                    addToOnloadEvent(modifyJobURL);
+                </script>
+
+                <style>
+                    .gnewtonJobLink a, .gnewtonJobLink a:visited, .gnewtonJobNode a, .gnewtonJobNode a:visited, .gnewtonNode a, .gnewtonNode a:visited, .gnewtonCareerGroupJobTitleClass a, .gnewtonCareerGroupJobTitleClass a:visited{
+                        line-height: 18px;
+                        display: block;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                    }
+                    .gnewtonCareerBodyClass *, .gnewtonLandingAreaClass * {
+                        font-size:12px;
+                        font-family:arial,helvetica,sans-serif;
+                    }
+                    .gnewtonCareerBodyClass img {
+                        cursor: pointer;
+                    }
+                    .gnewtonCareerBodyClass table{
+                        border-collapse: collapse;
+                        table-layout: fixed;
+                        width: 100%;
+                    }
+                    #gnewtonCareerBody form input,#gnewtonCareerBody form textarea,#gnewtonCareerBody form select,.non-form-input{
+                        margin: 0px;
+                        padding: 0;
+                        float: none;
+                    }
+                    .gnewtonImgArrow{
+                        text-decoration: none;
+                        border: 0px solid #ffffff;
+                        display:inline;
+                    }
+                
+                    #gnewtonCareerHome .gnewtonJobFilter .gnewtonComboSearch .gnewtonKeywordInput {
+                        width:235px;
+                        height: 32px;
+                        border-radius: 2px;
+                        border: solid 1px #ccd3d8;
+                        padding: 0 5px;
+                        -webkit-box-sizing: border-box;
+                        -moz-box-sizing: border-box;
+                        box-sizing: border-box;
+                    }
+                
+                    .gnewtonComboSearch {
+                        padding:0 9px 0 0;
+                    }
+                    .gnewtonNode{
+                        display: list-item;
+                        margin: 0px;
+                        list-style-type:none;
+                    }
+                    .gnewtonTest{
+                        margin:0;
+                        padding: 0;
+                    }
+                
+                    .gnewtonJobLink, .gnewtonJobNode{
+                        text-align: left;
+                        padding-right: 6px;
+                        text-overflow: ellipsis;
+                        overflow-x: hidden;
+                    }
+                    .gnewtonJobLink a, .gnewtonJobList a, .gnewtonCareerGroupRowClass .gnewtonCareerGroupJobTitleClass a {
+                        display: inline;
+                    }
+                    .gnewtonJobLocation {
+                        text-align: right;
+                        width: 30%;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        -ms-text-overflow: ellipsis;
+                        text-overflow: ellipsis;
+                    }
+                
+                    #gnewtonCareerBody div.gnewtonBlueBtn {
+                        height:15px;
+                        padding: 7px 10px 8px;
+                    }
+                
+                    #gnewtonCareerBody div.gnewtonSearchBtnClass {
+                        line-height: 15px;
+                    }
+                
+                    .gnewtonLocationClass {
+                        width:auto;
+                    }
+                    .gnewtonStateClass {
+                        width:auto;
+                    }
+                    .gnewtonCityClass {
+                        width:auto;
+                    }
+                    .gnewtonHidden {
+                        display: none;
+                    }
+                    .gnewtonDepartmentClass, .gnewtonLocationClass, .gnewtonStateClass, .gnewtonCityClass, .gnewtonZipCodeClass {
+                        height: 30px;
+                        width: 120px;
+                        border: solid 1px #ccd3d8;
+                        border-radius: 2px;
+                        color: #4f4e59;
+                        font-size: 12px;
+                        line-height: 14px;
+                    }
+                    #gnewtonDepartment{
+                        width: 120px;
+                    }
+                    .gnewtonJobList{
+                        margin: 0;
+                        padding: 0;
+                    }
+                
+                    .gnewtonCareerBodyClass table.gnewtonJobFilter{
+                        margin-bottom: 21px;
+                        width: auto;
+                    }
+                    #gnewtonCareerBody .gnewtonJobListWithLocation .gnewtonColumnHeaders th{
+                        padding-bottom: 6px;
+                        font-weight: bold;
+                    }
+                
+                    #gnewtonGeneric > td{
+                        padding-top: 12px;
+                    }
+                
+                
+                /*Group By Department*/
+                    .gnewtonCategoryBar{
+                        font-size: 14px;
+                        cursor: pointer;
+                    }
+                    .gnewtonUlTag{
+                        padding: 6px 0 0 15px;
+                        cursor: pointer;
+                    }
+                    .gnewtonDefault{
+                        margin-bottom: 14px;
+                        cursor: pointer;
+                        position: relative;
+                    }
+                    .gnewtonDefault svg{
+                        width: 10px;
+                        height: 10px;
+                        stroke-width: 2px;
+                    }
+                    .gnewtonDefault.expanded svg line.horizontal{
+                        display: none;
+                    }
+                
+                /* EXPANDED - Group By Department*/
+                    .gnewtonCareerGroupHeaderClass {
+                        font-size: 16px;
+                        margin-top: 21px;
+                        overflow: hidden;
+                    }
+                    .gnewtonCareerGroupRowClass {
+                        flex-wrap: nowrap;
+                        flex-flow: row;
+                
+                        display: -webkit-box;
+                        display: -moz-box;
+                        display: -ms-flexbox;
+                        display: -webkit-flex;
+                        display: flex;
+                
+                        -webkit-flex-flow: row;
+                        justify-content: space-around;
+                        margin-top: 2px;
+                    }
+                    .gnewtonCareerGroupHeaderClass:first-child{
+                        margin: 0;
+                    }
+                    .gnewtonCareerGroupJobTitleClass {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        padding-right: 6px;
+                    }
+                    .gnewtonCareerGroupJobDescriptionClass {
+                        -webkit-flex: 1 1 100px;
+                        flex: 1 1 100px;
+                        min-width: 105px;
+                        text-align: right;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                
+                    @media (max-width: 600px) {
+                        #gnewtonDepartmentCell, #gnewtonLocationCell, #gnewtonCityCell{
+                            display: none;
+                        }
+                        #gnewtonSearchButtonCell{
+                            width: 70px;
+                        }
+                        .gnewtonKeywordInput{
+                            width: 100%;
+                        }
+                        .gnewtonJobFilter{
+                            width: 100% !important;
+                        }
+                        .gnewtonJobLocation {
+                            width: 110px;
+                        }
+                    }
+                
+                    .gnewtonSortByJob {
+                        float: left;
+                        margin-bottom: 21px;
+                        cursor: pointer;
+                        line-height: normal;
+                    }
+                
+                    .gnewtonSortByLocationOrDepartment {
+                        float: right;
+                        margin-bottom: 21px;
+                        cursor: pointer;
+                    }
+                
+                    .arrow-btn {
+                        float: right;
+                        margin-top: 4px;
+                        margin-left: 8px;
+                        border-left: 5px solid transparent;
+                        border-right: 5px solid transparent;
+                    }
+                    
+                    .arrow-up {
+                        border-bottom: 5px solid #3498DB;
+                    }
+                
+                    .arrow-up-disable {
+                        border-bottom: 5px solid #ccd3d8;
+                    }
+                
+                    .arrow-down {
+                        border-top: 5px solid #3498DB;
+                    }
+                
+                    .arrow-down-disable {
+                        border-top: 5px solid #ccd3d8;
+                    }
+                </style>
+                <script src="http://newton.newtonsoftware.com/career/js/jquery-1.11.1.min.js"></script>
+
+                <div id="gnewtonCareerBody" class="gnewtonCareerBodyClass">
+                    <div id="gnewtonLandingArea" class="gnewtonLandingAreaClass">
+                        <p>Career Opportunities</p>
+                    </div>
+                    <form name="candidateHome" method="POST" action="http://newton.newtonsoftware.com/career/CareerHomeSearch.action?clientId=8a7882605ab6ecbb015aba5e4c8e78c4">
+                        <input type="hidden" id="csrf-token" name="csrf-token" value="" />
+                        <input type="hidden" id="isMobileDevice" name="isMobileDevice" value="null" />
+                        <input type='hidden' name='sortField' id='sortField' value='jobTitle' />
+                        <input type='hidden' name='descend' id='descend' value='false' />
+                        <input type='hidden' name='sortFieldSecond' id='sortFieldSecond' value='' />
+                        <input type='hidden' name='descendSecond' id='descendSecond' value='false' />
+                        <input type='hidden' name='clickField' id='clickField' value='' />
+                        <table id="gnewtonCareerHome">
+
+                            <tr>
+                                <th>
+                                    <div class="gnewtonSortByJob" onclick="formSubmitToSort('candidateHome', 'department', 'location', 'department', true)">
+                                        <a>Department</a>
+
+                                        <div class="arrow-btn arrow-up"></div>
+
+                                    </div>
+                                    <div class="gnewtonSortByLocationOrDepartment" onclick="formSubmitToSort('candidateHome', 'department', 'location', 'location', true)">
+                                        <a>Location</a>
+
+                                        <div class="arrow-btn arrow-up-disable"></div>
+
+                                    </div>
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <td nowrap="nowrap">
+
+                                    <div class="gnewtonCareerGroupHeaderClass">
+                                        General Labor
+                                    </div>
+
+                                    <div class="gnewtonCareerGroupRowClass">
+                                        <div class="gnewtonCareerGroupJobTitleClass">
+                                            <a href="http://newton.newtonsoftware.com/career/JobIntroduction.action?clientId=8a7882605ab6ecbb015aba5e4c8e78c4&id=8a7882525bc77931015bee6dae656c29&source=" ns-qa="1st and 2nd Shift Material Handlers">
                                 1st and 2nd Shift Material Handlers
                             </a>
-                            
-                        </div>
-                        <div class="gnewtonCareerGroupJobDescriptionClass">
-                            
-                            Mooresville, IN
-                        </div>
-                    </div>
-                
-            
-        
-            
-                <div class="gnewtonCareerGroupHeaderClass">
-                    Maintenance
-                </div>
-                
-                    <div class="gnewtonCareerGroupRowClass">
-                        <div class="gnewtonCareerGroupJobTitleClass">
-                            <a href="http://newton.newtonsoftware.com/career/JobIntroduction.action?clientId=8a7882605ab6ecbb015aba5e4c8e78c4&id=8a7883a8612bf7eb016149b533da1254&source=" ns-qa="1st Shift Industrial Maintenance">
+
+                                        </div>
+                                        <div class="gnewtonCareerGroupJobDescriptionClass">
+
+                                            Mooresville, IN
+                                        </div>
+                                    </div>
+
+                                    <div class="gnewtonCareerGroupHeaderClass">
+                                        Maintenance
+                                    </div>
+
+                                    <div class="gnewtonCareerGroupRowClass">
+                                        <div class="gnewtonCareerGroupJobTitleClass">
+                                            <a href="http://newton.newtonsoftware.com/career/JobIntroduction.action?clientId=8a7882605ab6ecbb015aba5e4c8e78c4&id=8a7883a8612bf7eb016149b533da1254&source=" ns-qa="1st Shift Industrial Maintenance">
                                 1st Shift Industrial Maintenance
                             </a>
-                            
-                        </div>
-                        <div class="gnewtonCareerGroupJobDescriptionClass">
-                            
-                            Mooresville, IN
-                        </div>
-                    </div>
-                
-            
-        
-            
-        
-    </td>
-</tr>
 
-                
-                
-                
-                
-                
-                
-            
-            
-            
-                <tr id="gnewtonGeneric">
-                    <td>
-                        <DIV>To be considered for a position, please fill out an application by <a href="http://newton.newtonsoftware.com/career/SubmitResume.action?clientId=8a7882605ab6ecbb015aba5e4c8e78c4&source=&submissionClicked=true&fromAggregate=false&id=8a7882605ab6ecbb015aba8550d27aa9"> clicking here.</a> </DIV>
-                    </td>    
-                </tr>
-            
-            
-            <tr>
-                <td>
-                    
+                                        </div>
+                                        <div class="gnewtonCareerGroupJobDescriptionClass">
 
+                                            Mooresville, IN
+                                        </div>
+                                    </div>
 
+                                </td>
+                            </tr>
 
+                            <tr id="gnewtonGeneric">
+                                <td>
+                                    <DIV>To be considered for a position, please fill out an application by <a href="http://newton.newtonsoftware.com/career/SubmitResume.action?clientId=8a7882605ab6ecbb015aba5e4c8e78c4&source=&submissionClicked=true&fromAggregate=false&id=8a7882605ab6ecbb015aba8550d27aa9"> clicking here.</a> </DIV>
+                                </td>
+                            </tr>
 
+                            <tr>
+                                <td>
 
-  <div id="gnewtonLogo" class="gnewtonLogoClass">
-    <div class="newton_logo">
-        <a href="http://newtonsoftware.com/lp/newton-frame?utm_source=newtonapp&utm_medium=banner&utm_campaign=poweredbynewton"
-           target="_blank">
-           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" viewBox="0 0 1341.1 407.9" style="enable-background:new 0 0 1341.1 407.9;" xml:space="preserve">
+                                    <div id="gnewtonLogo" class="gnewtonLogoClass">
+                                        <div class="newton_logo">
+                                            <a href="http://newtonsoftware.com/lp/newton-frame?utm_source=newtonapp&utm_medium=banner&utm_campaign=poweredbynewton" target="_blank">
+                                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" viewBox="0 0 1341.1 407.9" style="enable-background:new 0 0 1341.1 407.9;" xml:space="preserve">
             <style type="text/css">
-            	 svg{fill:#CDD4D8;}
-            	 svg:hover .st0{fill:#FC385F;}
+                 svg{fill:#CDD4D8;}
+                 svg:hover .st0{fill:#FC385F;}
             </style>
             <path class="st0" d="M900.5,302.9c0-28.3,10.4-52.6,31.1-72.9s45.5-30.5,74.5-30.5c28.6,0,53.2,10.2,73.7,30.7
-            	c20.6,20.5,30.9,45.1,30.9,73.8c0,28.9-10.3,53.4-31,73.6s-45.8,30.3-75.1,30.3c-26,0-49.3-9-69.9-27
-            	C911.8,361.1,900.5,335.1,900.5,302.9z M931.1,303.3c0,22.2,7.5,40.5,22.4,54.8c14.8,14.3,32,21.5,51.4,21.5
-            	c21.1,0,38.9-7.3,53.4-21.9c14.5-14.8,21.7-32.7,21.7-53.9c0-21.4-7.2-39.4-21.5-53.9c-14.2-14.6-31.9-21.9-52.9-21.9
-            	c-20.9,0-38.6,7.3-53,21.9C938.3,264.3,931.1,282.1,931.1,303.3z"></path>
+                c20.6,20.5,30.9,45.1,30.9,73.8c0,28.9-10.3,53.4-31,73.6s-45.8,30.3-75.1,30.3c-26,0-49.3-9-69.9-27
+                C911.8,361.1,900.5,335.1,900.5,302.9z M931.1,303.3c0,22.2,7.5,40.5,22.4,54.8c14.8,14.3,32,21.5,51.4,21.5
+                c21.1,0,38.9-7.3,53.4-21.9c14.5-14.8,21.7-32.7,21.7-53.9c0-21.4-7.2-39.4-21.5-53.9c-14.2-14.6-31.9-21.9-52.9-21.9
+                c-20.9,0-38.6,7.3-53,21.9C938.3,264.3,931.1,282.1,931.1,303.3z"></path>
             <polygon class="st0" points="499.4,404.3 548.4,274.6 595.5,404.3 605.5,404.3 689.9,203.5 656.9,203.5 601.4,337.7 552.7,203.5
-            	545.3,203.5 494.4,337.7 442.1,203.5 409.2,203.5 489.4,404.3 "></polygon>
+                545.3,203.5 494.4,337.7 442.1,203.5 409.2,203.5 489.4,404.3 "></polygon>
             <polygon class="st0" points="360,231.8 360,203.5 249.1,203.5 249.1,404.3 360,404.3 360,375.8 279.4,375.8 279.4,308.6
-            	357.7,308.6 357.7,280.1 279.4,280.1 279.4,231.8 "></polygon>
+                357.7,308.6 357.7,280.1 279.4,280.1 279.4,231.8 "></polygon>
             <polygon class="st0" points="30.3,263.6 165.2,404.3 176.9,404.3 176.9,203.5 146.6,203.5 146.6,343 13.2,203.5 0,203.5 0,404.3
-            	30.3,404.3 "></polygon>
+                30.3,404.3 "></polygon>
             <polygon class="st0" points="779.3,404.3 809.7,404.3 809.7,231.8 855.7,231.8 855.7,203.5 733.1,203.5 733.1,231.8 779.3,231.8 "></polygon>
             <polygon class="st0" points="1194.5,263.6 1329.4,404.3 1341.1,404.3 1341.1,203.5 1310.8,203.5 1310.8,343 1177.4,203.5
-            	1164.1,203.5 1164.1,404.3 1194.5,404.3 "></polygon>
+                1164.1,203.5 1164.1,404.3 1194.5,404.3 "></polygon>
             <path d="M198.1,73v48.4h-18V2.2h20.4c10,0,17.5,0.7,22.6,2.1s9.7,4,13.6,7.9c6.8,6.7,10.3,15.1,10.3,25.3
-            	c0,10.9-3.7,19.6-11,25.9c-7.3,6.4-17.2,9.6-29.6,9.6H198.1z M198.1,56.3h6.7c16.5,0,24.8-6.4,24.8-19.1c0-12.3-8.5-18.4-25.5-18.4
-            	h-6V56.3z"></path>
+                c0,10.9-3.7,19.6-11,25.9c-7.3,6.4-17.2,9.6-29.6,9.6H198.1z M198.1,56.3h6.7c16.5,0,24.8-6.4,24.8-19.1c0-12.3-8.5-18.4-25.5-18.4
+                h-6V56.3z"></path>
             <path d="M259.5,61.3c0-16.8,6.1-31.2,18.4-43.2C290.1,6.1,304.9,0,322,0c17,0,31.5,6.1,43.7,18.2S384,44.9,384,62
-            	s-6.1,31.7-18.4,43.6c-12.3,12-27.1,18-44.5,18c-15.4,0-29.2-5.3-41.4-16C266.2,95.8,259.5,80.4,259.5,61.3z M277.6,61.5
-            	c0,13.2,4.4,24,13.3,32.5c8.8,8.5,19,12.7,30.5,12.7c12.5,0,23.1-4.3,31.6-13c8.6-8.7,12.9-19.4,12.9-32c0-12.7-4.2-23.4-12.7-32
-            	c-8.4-8.6-18.9-13-31.3-13s-22.9,4.3-31.4,13C281.9,38.4,277.6,48.9,277.6,61.5z"></path>
+                s-6.1,31.7-18.4,43.6c-12.3,12-27.1,18-44.5,18c-15.4,0-29.2-5.3-41.4-16C266.2,95.8,259.5,80.4,259.5,61.3z M277.6,61.5
+                c0,13.2,4.4,24,13.3,32.5c8.8,8.5,19,12.7,30.5,12.7c12.5,0,23.1-4.3,31.6-13c8.6-8.7,12.9-19.4,12.9-32c0-12.7-4.2-23.4-12.7-32
+                c-8.4-8.6-18.9-13-31.3-13s-22.9,4.3-31.4,13C281.9,38.4,277.6,48.9,277.6,61.5z"></path>
             <path d="M635,19.1h-47.8v28.6h46.4v16.9h-46.4v39.8H635v16.9h-65.8V2.2H635V19.1z"></path>
             <path d="M699,70.6l36.9,50.8h-22l-34-48.8h-3.2v48.8h-18V2.2h21.1c15.7,0,27.1,3,34.1,8.9c7.7,6.6,11.6,15.3,11.6,26.1
-            	c0,8.4-2.4,15.7-7.3,21.8C713.3,65,706.9,68.9,699,70.6z M676.6,56.9h5.7c17,0,25.5-6.5,25.5-19.5c0-12.2-8.3-18.3-24.9-18.3h-6.4
-            	L676.6,56.9L676.6,56.9z"></path>
+                c0,8.4-2.4,15.7-7.3,21.8C713.3,65,706.9,68.9,699,70.6z M676.6,56.9h5.7c17,0,25.5-6.5,25.5-19.5c0-12.2-8.3-18.3-24.9-18.3h-6.4
+                L676.6,56.9L676.6,56.9z"></path>
             <path d="M819.5,19.1h-47.8v28.6h46.4v16.9h-46.4v39.8h47.8v16.9h-65.8V2.2h65.8V19.1z"></path>
             <path d="M843.2,121.4V2.2h25c12,0,21.5,1.2,28.4,3.6c7.5,2.3,14.2,6.3,20.3,11.8c12.3,11.2,18.4,26,18.4,44.2
-            	c0,18.3-6.4,33.1-19.2,44.5c-6.4,5.7-13.2,9.6-20.2,11.8c-6.6,2.2-15.9,3.3-28,3.3L843.2,121.4L843.2,121.4z M861.1,104.5h8.1
-            	c8.1,0,14.8-0.8,20.1-2.5c5.4-1.8,10.2-4.7,14.5-8.6c8.8-8.1,13.3-18.6,13.3-31.6c0-13.1-4.4-23.7-13.1-31.8
-            	c-7.9-7.3-19.5-10.9-34.8-10.9h-8.1V104.5z"></path>
+                c0,18.3-6.4,33.1-19.2,44.5c-6.4,5.7-13.2,9.6-20.2,11.8c-6.6,2.2-15.9,3.3-28,3.3L843.2,121.4L843.2,121.4z M861.1,104.5h8.1
+                c8.1,0,14.8-0.8,20.1-2.5c5.4-1.8,10.2-4.7,14.5-8.6c8.8-8.1,13.3-18.6,13.3-31.6c0-13.1-4.4-23.7-13.1-31.8
+                c-7.9-7.3-19.5-10.9-34.8-10.9h-8.1V104.5z"></path>
             <path d="M1006.7,121.4V2.2h17.9c8,0,14.3,0.6,19.1,1.9c4.8,1.2,8.8,3.3,12.1,6.3c3.3,3,6,6.8,8,11.3c2,4.6,3,9.2,3,13.9
-            	c0,8.5-3.3,15.8-9.8,21.7c6.3,2.2,11.3,5.9,15,11.3c3.7,5.4,5.6,11.6,5.6,18.7c0,9.3-3.3,17.2-9.9,23.6c-4,4-8.4,6.7-13.4,8.3
-            	c-5.4,1.5-12.2,2.2-20.3,2.2L1006.7,121.4L1006.7,121.4z M1024.7,53.4h5.6c6.7,0,11.6-1.5,14.7-4.4c3.1-3,4.7-7.3,4.7-13.1
-            	c0-5.6-1.6-9.9-4.8-12.8c-3.2-2.9-7.8-4.4-13.9-4.4h-6.3L1024.7,53.4L1024.7,53.4z M1024.7,104.5h11.1c8.1,0,14.1-1.6,17.9-4.8
-            	c4-3.4,6-7.8,6-13.1c0-5.1-1.9-9.5-5.8-13c-3.8-3.4-10.5-5.2-20.1-5.2h-9.1V104.5z"></path>
+                c0,8.5-3.3,15.8-9.8,21.7c6.3,2.2,11.3,5.9,15,11.3c3.7,5.4,5.6,11.6,5.6,18.7c0,9.3-3.3,17.2-9.9,23.6c-4,4-8.4,6.7-13.4,8.3
+                c-5.4,1.5-12.2,2.2-20.3,2.2L1006.7,121.4L1006.7,121.4z M1024.7,53.4h5.6c6.7,0,11.6-1.5,14.7-4.4c3.1-3,4.7-7.3,4.7-13.1
+                c0-5.6-1.6-9.9-4.8-12.8c-3.2-2.9-7.8-4.4-13.9-4.4h-6.3L1024.7,53.4L1024.7,53.4z M1024.7,104.5h11.1c8.1,0,14.1-1.6,17.9-4.8
+                c4-3.4,6-7.8,6-13.1c0-5.1-1.9-9.5-5.8-13c-3.8-3.4-10.5-5.2-20.1-5.2h-9.1V104.5z"></path>
             <path d="M1118.2,69.9l-38.9-67.7h20.7l27.2,47.6l27.3-47.6h20.7l-39.1,67.7v51.5h-18V69.9H1118.2z"></path>
             <polygon points="441.5,121.4 470.5,44.5 498.4,121.4 504.3,121.4 554.4,2.2 534.9,2.2 501.9,81.9 472.8,1.8 468.9,1.8
-            	438.5,81.9 407.5,2.2 387.9,2.2 435.5,121.4 "></polygon>
+                438.5,81.9 407.5,2.2 387.9,2.2 435.5,121.4 "></polygon>
             </svg>
-        </a>
-    </div>
-  </div>
+                                            </a>
+                                        </div>
+                                    </div>
 
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <!-- Newton code end -->
 
-                </td>
-            </tr>
-        </table>
-    </form>
-</div>
-	<!-- Newton code end -->
-</div> <!-- close div for newton content -->
+            </div>
+            <!-- close div for newton content -->
 
-<!--     <footer class="footer">
-      <div class="container">
-        <span class="text-muted text-left">&copy;2011-2019 Thiesing Veneer Co.</span>
-      </div>
-    </footer> -->
-
-<script src="../js/jquery.slim.min.js"></script>
-<script src="../js/popper.min.js"></script>
-<script src="../js/bootstrap.min.js"></script>
+            <script src="../js/jquery.slim.min.js"></script>
+            <script src="../js/popper.min.js"></script>
+            <script src="../js/bootstrap.min.js"></script>
 </body>
+
 </html>
